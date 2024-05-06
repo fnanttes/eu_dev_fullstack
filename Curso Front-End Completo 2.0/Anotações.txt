@@ -1,0 +1,14 @@
+HTML
+- Hyper Text Markup Language
+    - HTML é a linguagem de marcação padrão para páginas da Web.
+      HTML significa Hyper Text Markup Language HTML é a linguagem de marcação padrão para a criação de páginas da Web.
+      HTML descreve a estrutura de uma página da Web.
+      HTML consiste em uma série de elementos. Os elementos HTML informam ao navegador como exibir o conteúdo.
+      Os elementos HTML rotulam partes do conteúdo como “isto é um título”, “este é um parágrafo”, “isto é um link”, etc.
+
+Tags básicas
+- p: parágrafo
+- a: link
+- h1: título
+- img: imagem
+
