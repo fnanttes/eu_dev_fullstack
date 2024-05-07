@@ -27,11 +27,3 @@ h2 {
 .paragrafo {
   font-size: 30px;
 }
-
-p.paragrafo {
-  font-size: 30px;
-}
-
-[nome="parafrafo"] {
-  font-family: "Courier New", Courier, monospace;
-}
