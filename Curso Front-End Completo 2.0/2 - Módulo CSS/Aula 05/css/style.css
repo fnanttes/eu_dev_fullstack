@@ -27,3 +27,11 @@ h2 {
 .paragrafo {
   font-size: 30px;
 }
+
+p.paragrafo {
+  font-size: 30px;
+}
+
+[nome="parafrafo"] {
+  color: blue;
+}
