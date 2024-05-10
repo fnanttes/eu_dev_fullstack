@@ -4,24 +4,14 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  -ms-flex-wrap: wrap;
+.teste h2.title {
+  color: green;
 }
 
-.d1 {
-  width: 100%;
-  background-color: blue;
+h2.title {
+  color: green;
 }
 
-.d2 {
-  width: 50%;
-  height: 300px;
-  background-color: red;
-}
-
-.d3 {
-  width: 50%;
-  height: 300px;
-  background-color: green;
+h2 {
+  color: red;
 }
