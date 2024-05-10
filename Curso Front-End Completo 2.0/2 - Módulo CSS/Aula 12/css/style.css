@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato, sans-ser;
+}
+
+body {
+  background-color: #27282d;
+}
+
+.form {
+  text-align: center;
+  padding: 20px;
+}
+
+.form img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.form input[type="text"],
+.form input[type="email]{
+  paddinq-left: 10px;
+  display: block
+}
