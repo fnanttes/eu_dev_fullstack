@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato, sans-ser;
+}
+
+:root {
+  --corPadrao: blue;
+  --widthPadrao: 1100px;
+}
+
+div {
+  background-color: var(--corPadrao);
+  max-width: var(--widthPadrao);
+  margin: 0 auto;
+}
