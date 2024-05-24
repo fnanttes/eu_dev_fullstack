@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 5 - Funções</title>
+  </head>
+  <body>
+    <script>
+      function testes() {
+        console.log("chamando a funcao testes");
+      }
+
+      testes();
+
+      function teste2(nome, idade) {
+        console.log("O nome passado é: " + nome);
+        console.log("A idade passada é: " + idade);
+        console.log(nome + " tem " + idade + " anos.");
+      }
+
+      teste2("Bentto", 7);
+
+      teste2("Dom", 1);
+
+      teste2("Sheila", 37);
+
+      teste2("Filipe", 35);
+
+      function pegaNome() {
+        return "Melissa";
+
+        console.log("Testes");
+      }
+
+      console.log(pegaNome());
+
+      function pegaIdade() {
+        return 35;
+      }
+
+      console.log(pegaIdade());
+
+      function pegaNomeIdade() {
+        return "Melissa tem 35 anos.";
+      }
+
+      console.log(pegaNomeIdade());
+
+      function pegaNomeIdade2(nome, idade) {
+        return nome + " tem " + idade + " anos.";
+      }
+
+      console.log(pegaNomeIdade2("Melissa", 35));
+
+      function pegaNomeIdade3(nome, idade) {
+        return nome + " tem " + idade + " anos.";
+      }
+
+      console.log(pegaNomeIdade3("Melissa", 35));
+    </script>
+  </body>
+</html>
