@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 2 - Funções e instâncias</title>
+  </head>
+  <body>
+    <!-- O script JavaScript começa aqui -->
+    <script>
+      // Declaração de uma função chamada 'pessoa'
+      function pessoa() {
+        // A palavra-chave 'this' referencia o novo objeto criado
+        this.nome = "Filipe";
+      }
+
+      // Criação de uma nova instância do objeto 'pessoa' usando 'new'
+      var pessoa = new pessoa();
+      // Criação de uma segunda instância do objeto 'pessoa' usando 'new'
+      var pessoa2 = new pessoa();
+
+      // Alteração do nome da primeira instância
+      pessoa.nome = "Sheila";
+
+      // Exibir o nome da primeira instância usando a função 'alert()'
+      alert(pessoa.nome);
+    </script>
+    <!-- O script JavaScript termina aqui -->
+  </body>
+</html>

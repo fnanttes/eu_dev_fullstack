@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 2 - Funções e instâncias</title>
+  </head>
+  <body>
+    <script>
+      // Declaração de uma função chamada 'pessoa'
+      function Pessoa() {
+        // A palavra-chave 'this' referencia o novo objeto criado
+        this.nome = "Filipe";
+        this.idade = 27;
+        // Definição de um método chamado 'printNome'
+        this.printNome = function () {
+          alert(this.nome);
+        };
+      }
+
+      // Criação de uma nova instância do objeto 'Pessoa' usando 'new'
+      var pessoa = new Pessoa();
+      // Criação de uma segunda instância do objeto 'Pessoa' usando 'new'
+      var pessoa_2 = new Pessoa();
+
+      // Chamada ao método 'printNome' da segunda instância
+      pessoa_2.printNome();
+
+      // Tentativa de acessar uma propriedade inexistente 'PessoaError' no construtor 'Pessoa'
+      // Isto irá gerar um erro de referência nula (TypeError)
+      alert(Pessoa.PessoaError);
+    </script>
+  </body>
+</html>
