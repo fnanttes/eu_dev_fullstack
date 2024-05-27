@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 4 - Classes</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        constructor(nome, idade) {
+          this.nome = nome;
+          this.idade = idade;
+        }
+      }
+
+      class Cachorro extends Animal {
+        constructor(nome, idade) {
+          super(nome, idade);
+        }
+
+      cachorro = new Cachorro("Maltes");
+
+      animal = new Animal("Gato");
+
+      alert(cachorro.printNome());
+      alert(animal.printNome());
+    </script>
+  </body>
+</html>

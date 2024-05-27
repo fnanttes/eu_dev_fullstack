@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 6 - Mais sobre datas</title>
+  </head>
+  <body>
+    <script>
+      var data = new Date("05/27/2024");
+      var date2 = new Date("05/27/2024");
+      var date3 = new Date(2024, 5, 27);
+
+      //Fazendo conta com datas
+      var diferenca = date2 - date3;
+      var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+      console.log(diferenca);
+      console.log(dias);
+    </script>
+  </body>
+</html>
