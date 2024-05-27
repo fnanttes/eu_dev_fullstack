@@ -7,26 +7,24 @@
   </head>
   <body>
     <script>
-      //Aplicação calculadora dinâmica
+      // Aplicação calculadora dinâmica
 
-      //Queremos um número inicial
-      //Queremos um sinal (tipo de operação)
-      //Queremos um segundo número
-      //Queremos um botão para calcular
-      //Queremos um botão para limpar
-      //Queremos um botão para sair
-
-      var numeroInicial = prompt("Informe um numero: ");
+      // Variáveis necessárias
+      var numeroInicial = prompt("Informe um número: ");
       var sinal = prompt("Informe um sinal: ");
-      var segundoNumero = prompt("Informe um segundo numero: ");
+      var segundoNumero = prompt("Informe um segundo número: ");
       var resultado = 0;
+
+      // Obtendo elementos HTML
       var botaoCalcular = document.getElementById("calcular");
       var botaoLimpar = document.getElementById("limpar");
       var botaoSair = document.getElementById("sair");
       var divResultado = document.getElementById("resultado");
       var divSinal = document.getElementById("sinal");
 
+      // Evento de clique no botão "Calcular"
       botaoCalcular.onclick = function () {
+        // Realizando a operação matemática correspondente ao sinal
         if (sinal == "+") {
           resultado = parseFloat(numeroInicial) + parseFloat(segundoNumero);
         } else if (sinal == "-") {
@@ -37,13 +35,20 @@
           resultado = parseFloat(numeroInicial) / parseFloat(segundoNumero);
         }
 
+        // Atualizando o HTML com o resultado e o sinal
         divResultado.innerHTML = resultado;
         divSinal.innerHTML = sinal;
+
+        // Limpando as variáveis
         numeroInicial = "";
         segundoNumero = "";
         sinal = "";
+
+        // Limpando o HTML
         divResultado.innerHTML = "";
         divSinal.innerHTML = "";
+
+        // Evento de clique no botão "Limpar"
         botaoLimpar.onclick = function () {
           numeroInicial = "";
           segundoNumero = "";
@@ -52,13 +57,14 @@
           divSinal.innerHTML = "";
         };
 
+        // Evento de clique no botão "Sair"
         botaoSair.onclick = function () {
           numeroInicial = "";
           segundoNumero = "";
           sinal = "";
           divResultado.innerHTML = "";
           divSinal.innerHTML = "";
-          window.close();
+          window.close(); // Fechando a janela
         };
       };
     </script>

@@ -7,11 +7,15 @@
   </head>
   <body>
     <script>
+      // Declarando e atribuindo uma função anônima à variável func
       var func = function () {
         console.log("Olá mundo!");
       };
+
+      // Chamando a função armazenada na variável func
       func();
 
+      // Declarando e chamando uma função anônima imediatamente (IIFE - Immediately Invoked Function Expression)
       (function () {
         console.log("Olá mundo!");
       })();

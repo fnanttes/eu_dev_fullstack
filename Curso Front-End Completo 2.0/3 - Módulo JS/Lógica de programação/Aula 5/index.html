@@ -7,56 +7,74 @@
   </head>
   <body>
     <script>
+      // Declarando uma função chamada testes
       function testes() {
-        console.log("chamando a funcao testes");
+        console.log("chamando a função testes");
       }
 
+      // Chamando a função testes
       testes();
 
+      // Declarando uma função chamada teste2 que recebe dois parâmetros: nome e idade
       function teste2(nome, idade) {
         console.log("O nome passado é: " + nome);
         console.log("A idade passada é: " + idade);
         console.log(nome + " tem " + idade + " anos.");
       }
 
+      // Chamando a função teste2 passando os valores "Bentto" e 7
       teste2("Bentto", 7);
 
+      // Chamando a função teste2 passando os valores "Dom" e 1
       teste2("Dom", 1);
 
+      // Chamando a função teste2 passando os valores "Sheila" e 37
       teste2("Sheila", 37);
 
+      // Chamando a função teste2 passando os valores "Filipe" e 35
       teste2("Filipe", 35);
 
+      // Declarando uma função chamada pegaNome que retorna a string "Melissa"
       function pegaNome() {
         return "Melissa";
 
+        // Este console.log não será executado, pois a função já retornou o valor
         console.log("Testes");
       }
 
+      // Chamando a função pegaNome e imprimindo o resultado no console
       console.log(pegaNome());
 
+      // Declarando uma função chamada pegaIdade que retorna o número 35
       function pegaIdade() {
         return 35;
       }
 
+      // Chamando a função pegaIdade e imprimindo o resultado no console
       console.log(pegaIdade());
 
+      // Declarando uma função chamada pegaNomeIdade que retorna a string "Melissa tem 35 anos."
       function pegaNomeIdade() {
         return "Melissa tem 35 anos.";
       }
 
+      // Chamando a função pegaNomeIdade e imprimindo o resultado no console
       console.log(pegaNomeIdade());
 
+      // Declarando uma função chamada pegaNomeIdade2 que recebe dois parâmetros: nome e idade
       function pegaNomeIdade2(nome, idade) {
         return nome + " tem " + idade + " anos.";
       }
 
+      // Chamando a função pegaNomeIdade2 passando os valores "Melissa" e 35 e imprimindo o resultado no console
       console.log(pegaNomeIdade2("Melissa", 35));
 
+      // Declarando uma função chamada pegaNomeIdade3 que recebe dois parâmetros: nome e idade
       function pegaNomeIdade3(nome, idade) {
         return nome + " tem " + idade + " anos.";
       }
 
+      // Chamando a função pegaNomeIdade3 passando os valores "Melissa" e 35 e imprimindo o resultado no console
       console.log(pegaNomeIdade3("Melissa", 35));
     </script>
   </body>

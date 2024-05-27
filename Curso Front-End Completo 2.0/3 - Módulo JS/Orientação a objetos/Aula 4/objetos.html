@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      // Definindo uma classe chamada Animal com um construtor que recebe nome e idade
       class Animal {
         constructor(nome, idade) {
           this.nome = nome;
@@ -14,17 +15,25 @@
         }
       }
 
+      // Definindo uma classe chamada Cachorro que herda de Animal
       class Cachorro extends Animal {
         constructor(nome, idade) {
+          // Chamando o construtor da classe pai (Animal)
           super(nome, idade);
         }
+      }
 
+      // Criando um novo objeto Cachorro com o nome "Maltes"
       cachorro = new Cachorro("Maltes");
 
+      // Criando um novo objeto Animal com o nome "Gato"
       animal = new Animal("Gato");
 
-      alert(cachorro.printNome());
-      alert(animal.printNome());
+      // Exibindo um alerta com o nome do cachorro (deverá mostrar "Maltes")
+      alert(cachorro.nome);
+
+      // Exibindo um alerta com o nome do animal (deverá mostrar "Gato")
+      alert(animal.nome);
     </script>
   </body>
 </html>

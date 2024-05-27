@@ -7,12 +7,16 @@
   </head>
   <body>
     <script>
+      // Declarando e inicializando um array com nomes de pessoas
       var arr = ["Filipe", "Sheila", "Bentto", "Dom"];
 
+      // Usando um loop for para percorrer o array e imprimir cada elemento no console
       for (var i = 0; i < arr.length; i++) {
         console.log(arr[i]);
       }
 
+      // Usando o método forEach do array para percorrer o array e imprimir cada elemento no console
+      // O método forEach recebe uma função de callback que recebe dois argumentos: value (o valor do elemento) e index (o índice do elemento)
       arr.forEach(function (value, index) {
         console.log(value, index);
       });

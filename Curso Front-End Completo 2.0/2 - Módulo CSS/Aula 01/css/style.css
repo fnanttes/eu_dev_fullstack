@@ -1,4 +1,5 @@
 * {
+  /* O asterisco (*) é um seletor universal que seleciona todos os elementos HTML */
   margin: 0;
   padding: 0;
   box-sizing: border-box;

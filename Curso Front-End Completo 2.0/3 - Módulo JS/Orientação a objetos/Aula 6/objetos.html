@@ -7,16 +7,22 @@
   </head>
   <body>
     <script>
+      // Criando objetos Date com diferentes formatos de data
       var data = new Date("05/27/2024");
       var date2 = new Date("05/27/2024");
-      var date3 = new Date(2024, 5, 27);
+      var date3 = new Date(2024, 5, 27); // Aqui, o mês é representado por um número (0-11)
 
-      //Fazendo conta com datas
+      // Fazendo operações matemáticas com datas
+      // A subtração de dois objetos Date retorna a diferença em milissegundos
       var diferenca = date2 - date3;
+
+      // Convertendo milissegundos para dias
+      // 1 dia = 1000 milissegundos * 60 segundos * 60 minutos * 24 horas
       var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
 
-      console.log(diferenca);
-      console.log(dias);
+      // Imprimindo resultados no console
+      console.log(diferenca); // Exibirá a diferença em milissegundos
+      console.log(dias); // Exibirá a diferença em dias
     </script>
   </body>
 </html>

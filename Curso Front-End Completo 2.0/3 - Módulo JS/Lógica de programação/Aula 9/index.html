@@ -7,11 +7,16 @@
   </head>
   <body>
     <script>
+      // Solicita ao usuário o nome, idade, peso e altura usando a função prompt
       var nome = prompt("Qual o seu nome?");
       var idade = prompt("Qual a sua idade?");
       var peso = prompt("Qual o seu peso?");
       var altura = prompt("Qual a sua altura?");
+
+      // Calcula o IMC (Índice de Massa Corporal) usando a fórmula peso / (altura * altura)
       var imc = peso / (altura * altura);
+
+      // Exibe uma mensagem no console com as informações do usuário e o resultado do cálculo do IMC
       console.log(
         nome +
           ", meus filhos se chamam " +

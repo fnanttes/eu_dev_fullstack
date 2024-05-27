@@ -7,25 +7,64 @@
   </head>
   <body>
     <script>
+      // Criando um novo objeto Date com a data e hora atuais
       var data = new Date();
+
+      // Exibindo o dia do mês (1-31)
       console.log(data.getDate());
+
+      // Exibindo o mês (0-11)
       console.log(data.getMonth());
+
+      // Exibindo o ano com quatro dígitos
       console.log(data.getFullYear());
+
+      // Exibindo a hora (0-23)
       console.log(data.getHours());
+
+      // Exibindo os minutos (0-59)
       console.log(data.getMinutes());
+
+      // Exibindo os segundos (0-59)
       console.log(data.getSeconds());
+
+      // Exibindo o dia da semana (0-6) (0 é domingo)
       console.log(data.getDay());
+
+      // Exibindo a data e hora em milissegundos desde 1º de janeiro de 1970
       console.log(data.getTime());
+
+      // Exibindo a data e hora no formato padrão do navegador
       console.log(data.toString());
+
+      // Exibindo a data no formato local (dia/mês/ano)
       console.log(data.toLocaleDateString());
+
+      // Exibindo a hora no formato local (hora:minuto:segundo)
       console.log(data.toLocaleTimeString());
+
+      // Exibindo a data e hora no formato local (dia/mês/ano hora:minuto:segundo)
       console.log(data.toLocaleString());
+
+      // Exibindo a data e hora no formato UTC (Coordinated Universal Time)
       console.log(data.toUTCString());
+
+      // Exibindo a data no formato padrão do navegador (dia da semana, dia do mês de três letras, mês de três letras, ano)
       console.log(data.toDateString());
+
+      // Exibindo a hora no formato padrão do navegador (hora:minuto:segundo)
       console.log(data.toTimeString());
+
+      // Exibindo a data e hora no formato ISO 8601 (YYYY-MM-DDTHH:MM:SS.sssZ)
       console.log(data.toISOString());
+
+      // Exibindo a data e hora no formato JSON (YYYY-MM-DDTHH:MM:SS.sssZ)
       console.log(data.toJSON());
+
+      // Exibindo a data e hora no formato GMT (Greenwich Mean Time)
       console.log(data.toGMTString());
+
+      // Exibindo a data e hora no formato UTC (Coordinated Universal Time)
       console.log(data.toUTCString());
     </script>
   </body>

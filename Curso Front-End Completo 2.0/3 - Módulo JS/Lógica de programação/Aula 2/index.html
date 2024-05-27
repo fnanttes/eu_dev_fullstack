@@ -7,24 +7,25 @@
   </head>
   <body>
     <script>
-      //var é uma variável global
-      //let é uma variável no escopo
-      //const é uma variável que não pode ser alterada
+      // var é uma variável global
+      // let é uma variável no escopo
+      // const é uma variável que não pode ser alterada
 
       var nome = "Filipe";
       var idade = 27;
 
       nome = "Sheila";
 
+      // Verifica se a variável nome contém um ponto
       if (nome.indexOf(".") != -1) {
-        console.log(nome.indexOf("."));
-        console.log(nome.replace(".", ""));
+        console.log(nome.indexOf(".")); // Imprime a posição do ponto
+        console.log(nome.replace(".", "")); // Remove o ponto da string
       } else {
-        console.log(nome);
-        console.log(nome + " tem " + idade + " anos.");
+        console.log(nome); // Imprime a variável nome
+        console.log(nome + " tem " + idade + " anos."); // Imprime a variável nome e a idade
       }
 
-      console.log(nome);
+      console.log(nome); // Imprime a variável nome
 
       var numero = 35;
       var nom1 = "Dom";
@@ -32,10 +33,10 @@
 
       var outraVariavel = true;
 
-      console.log(numero);
-      console.log(nom1);
-      console.log(nom2);
-      console.log(outraVariavel);
+      console.log(numero); // Imprime a variável numero
+      console.log(nom1); // Imprime a variável nom1
+      console.log(nom2); // Imprime a variável nom2
+      console.log(outraVariavel); // Imprime a variável outraVariavel
 
       console.log(
         "Minha esposa se chama " +
@@ -45,7 +46,7 @@
           " e " +
           nom2 +
           "."
-      );
+      ); // Imprime uma frase com as variáveis nome, nom1 e nom2
     </script>
   </body>
 </html>
