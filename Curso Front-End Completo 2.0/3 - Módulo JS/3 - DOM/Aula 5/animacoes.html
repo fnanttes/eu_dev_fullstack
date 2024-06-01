@@ -3,8 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 4 - Manipulando querySelectorAll</title>
+    <title>Aula 5 - animações</title>
   </head>
-  <body></body>
-  <script src="script.js"></script>
+  <body>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin-left: 0px;
+      }
+      .animEsquerda {
+        transition: 1s;
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color: green;
+      }
+    </style>
+    <div class="box"></div>
+    <script>
+      var box = document.querySelectorAll(".box")[0];
+      /*
+      setTimeout(() => {
+        box.classList.add("animEsquerda");
+      }, 1000);
+      */
+      box.addEventListener("click", () => {
+        box.classList.add("animEsquerda");
+      });
+    </script>
+  </body>
 </html>

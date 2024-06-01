@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 6 - mais animações</title>
+  </head>
+  <body>
+    <style>
+      .conteudo h2 span {
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      .conteudo p {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+      }
+
+      .mostrar {
+        height: 200px !important;
+        transition: 1s;
+      }
+    </style>
+    <div class="conteudo">
+      <h2>Título do documento<span>Ver mais!</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus
+        justo, commodo a tempus consequat, ultrices et dolor. Duis posuere
+        convallis lectus non vulputate. Curabitur hendrerit tellus at orci
+        gravida pretium. Proin vulputate eu ligula sed facilisis. Donec congue,
+        lectus sed rhoncus congue, felis justo imperdiet dolor, quis venenatis
+        nulla quam at dolor. Sed purus massa, pharetra in leo nec, malesuada
+        pulvinar nibh. Duis imperdiet aliquam dui, sit amet fringilla mi
+        fermentum sed. Nullam tempus elit ac libero dictum consectetur. Fusce
+        bibendum tellus ac mauris convallis, eu lobortis tortor tempus. Cras
+        faucibus sit amet ex et euismod. Integer sit amet bibendum nisl.
+        Maecenas finibus tincidunt magna, ut viverra sem. Morbi et lectus
+        scelerisque, ornare sem a, suscipit purus. Donec in mi id velit pharetra
+        ornare eget nec augue. Pellentesque varius, velit quis ullamcorper
+        scelerisque, libero felis pharetra ligula, sit amet sodales turpis ex et
+        eros.
+      </p>
+    </div>
+    <script>
+      var span = document.querySelector(".conteudo span");
+
+      span.addEventListener("click", () => {
+        var conteudo = document.querySelector(".conteudo p");
+
+        if (conteudo.classList.contains("mostrar")) {
+          span.innerHTML = "Ver mais!";
+          conteudo.classList.remove("mostrar");
+        } else {
+          span.innerHTML = "Ver menos!";
+          conteudo.classList.add("mostrar");
+        }
+      });
+    </script>
+  </body>
+</html>
