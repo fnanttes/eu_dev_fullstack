@@ -1,0 +1,92 @@
+<!-- Este é o documento HTML que define a estrutura básica de uma página web. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- A tag <head> contém metadados sobre o documento, como o título e configurações de codificação. -->
+  <head>
+    <!-- A tag <meta> define metadados sobre o documento HTML. -->
+    <!-- O atributo "charset" define a codificação de caracteres do documento. -->
+    <!-- O valor "UTF-8" especifica a codificação Unicode de 8 bits. -->
+    <meta charset="UTF-8" />
+
+    <!-- O atributo "name" define o nome do metadado. -->
+    <!-- O valor "viewport" especifica que o documento deve ser dimensionado e renderizado para a largura da tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A tag <title> define o título do documento. -->
+    <title>HTML Cores</title>
+  </head>
+  <!-- A tag <body> contém o conteúdo visível da página web. -->
+  <body>
+    <script>
+      // Declaração de variável usando a palavra-chave 'var'.
+      var nome = "guilherme";
+      // Template string, permite incorporar expressões em strings.
+      var conteudo = `O nome é ${nome}`;
+
+      // Imprime no console o conteúdo da variável 'conteudo'.
+      console.log(conteudo);
+
+      {
+        //Vai ficar definido apenas neste escopo.
+        // Declaração de variável usando a palavra-chave 'let'.
+        let nome = "guilherme";
+
+        // Declaração de função usando a palavra-chave 'function'.
+        let testes = function () {
+          console.log("Olá!");
+        };
+
+        // Chamada da função 'testes'.
+        testes();
+      }
+
+      // Declaração de função usando arrow function.
+      const testes = (texto, par) => {
+        // Chama a função passada como parâmetro.
+        par(texto);
+      };
+
+      // Chamada da função 'testes' passando uma função anônima como parâmetro.
+      testes("Olá mundo", (texto) => {
+        // Exibe uma caixa de alerta com o texto passado.
+        alert(texto);
+      });
+
+      // Declaração de array.
+      const arr = ["Guilherme", "Joao", "Felipe", "Zezinho", "Leo", "Juliana"];
+
+      // Destructuring assignment, permite extrair valores de arrays ou objetos em variáveis.
+      const [a, b, ...c] = arr;
+
+      // Exibe uma caixa de alerta com o primeiro elemento do array 'c'.
+      alert(c[0]);
+
+      // Declaração de array de objetos.
+      var nomes = [
+        {
+          nome: "Joao",
+        },
+        {
+          nome: "felipe",
+        },
+      ];
+
+      // Concatenação de arrays usando spread operator (...).
+      const objetos = [
+        ...nomes,
+        {
+          nome: "Guilherme",
+        },
+      ];
+
+      // Declaração de função usando a palavra-chave 'function' e rest parameter (...).
+      function testes(...numero) {
+        // Imprime no console o primeiro elemento do array passado como parâmetro.
+        console.log(numero[0][0]);
+      }
+
+      // Chamada da função 'testes' passando um array como parâmetro.
+      testes([1, 2, 3, 4, 5]);
+    </script>
+  </body>
+</html>
