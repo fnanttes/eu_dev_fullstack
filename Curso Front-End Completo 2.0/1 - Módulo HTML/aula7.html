@@ -1,15 +1,35 @@
+<!-- O DOCTYPE é uma declaração que informa ao navegador qual a versão do HTML está sendo usada neste documento. -->
 <!DOCTYPE html>
+
+<!-- Aqui, a tag <html> abre o documento HTML e a tag "lang" define a linguagem padrão do documento. Neste caso, a linguagem padrão é o inglês. -->
 <html lang="en">
   <head>
+    <!-- A tag <meta> define metadados sobre o documento HTML. -->
+    <!-- charset="UTF-8" define a codificação de caracteres para o documento. -->
     <meta charset="UTF-8" />
+
+    <!-- A tag <meta name="viewport"> define a largura e escala inicial do viewport. -->
+    <!-- width=device-width indica que a largura do viewport deve ser igual à largura do dispositivo. -->
+    <!-- initial-scale=1.0 indica que a escala inicial do viewport deve ser 1:1. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A tag <title> define o título do documento, que é exibido na barra de título do navegador. -->
     <title>Aula 7: video and audio tags</title>
   </head>
+
   <body>
+    <!-- A tag <video> define um elemento de vídeo. -->
+    <!-- A tag <controls> define controles para o vídeo. -->
+    <!-- A tag <source> define a fonte de mídia para o elemento de vídeo. -->
+    <!-- A tag <audio> define um elemento de áudio. -->
+    <!-- A tag <source> define a fonte de mídia para o elemento de áudio. -->
     <video controls>
+      <!-- A tag <source> define a fonte de mídia para o elemento de vídeo. -->
+      <!-- Define uma fonte de vídeo do YouTube. -->
       <source src="https://www.youtube.com/watch?v=W2FBeJ6SOvg" type="video" />
     </video>
     <audio>
+      <!-- A tag <source> define uma fonte de áudio, mas não foi fornecida aqui. -->
       <source src="" type="audio" />
     </audio>
   </body>
