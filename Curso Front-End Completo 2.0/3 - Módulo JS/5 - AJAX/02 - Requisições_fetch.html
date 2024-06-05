@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML -->
+<html lang="pt-br">
+  <!-- Início do documento HTML com o idioma definido como português do Brasil -->
+  <head>
+    <!-- Cabeçalho do documento -->
+    <meta charset="UTF-8" />
+    <!-- Definição do conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuração da viewport para responsividade, garantindo que a página seja exibida corretamente em dispositivos móveis -->
+    <title>Requisição com fetch</title>
+    <!-- Título da página que aparece na aba do navegador -->
+  </head>
+  <body>
+    <!-- Corpo do documento -->
+    <script>
+      fetch("https://jsonplaceholder.typicode.com/todos/1", {
+        method: "POST",
+        body: JSON.stringify({
+          title: "Ferilva's",
+          body: "Meu Conteúdo",
+          userId: 10,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    </script>
+  </body>
+</html>

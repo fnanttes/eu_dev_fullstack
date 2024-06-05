@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML -->
+<html lang="pt-br">
+  <!-- Início do documento HTML com o idioma definido como português do Brasil -->
+  <head>
+    <!-- Cabeçalho do documento -->
+    <meta charset="UTF-8" />
+    <!-- Definição do conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuração da viewport para responsividade, garantindo que a página seja exibida corretamente em dispositivos móveis -->
+    <title>Ajax Tradicional</title>
+    <!-- Título da página que aparece na aba do navegador -->
+  </head>
+  <body>
+    <!-- Corpo do documento -->
+    <script>
+      // Função que será executada após um atraso de 2 segundos (2000 milissegundos)
+      setTimeout(function () {
+        // Criação de um novo objeto XMLHttpRequest para fazer uma requisição HTTP
+        var request = new XMLHttpRequest();
+        // Configuração da requisição HTTP com o método GET e a URL do recurso
+        request.open(
+          "GET",
+          "https://jsonplaceholder.typicode.com/todos/1",
+          true
+        );
+
+        // Função que será chamada quando a requisição for carregada
+        request.onload = function () {
+          // Verifica se o status da resposta está entre 200 e 399, indicando sucesso
+          if (this.status >= 200 && this.status < 400) {
+            // Converte a resposta JSON em um objeto JavaScript
+            var data = JSON.parse(this.response);
+            // Exibe os dados no console do navegador
+            console.log(data);
+          } else {
+            // Código para tratar erros de resposta (não implementado)
+          }
+        };
+
+        // Função que será chamada em caso de erro na requisição
+        request.onerror = function () {
+          // Código para tratar erros de requisição (não implementado)
+        };
+
+        // Envia a requisição HTTP
+        request.send();
+      }, 2000);
+    </script>
+  </body>
+</html>
