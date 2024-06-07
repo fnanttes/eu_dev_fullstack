@@ -1,38 +1,77 @@
+/* 
+  Define que todos os elementos terão margem e padding zerados, 
+  e o box-sizing será border-box, o que faz com que padding e borda 
+  sejam incluídos nas dimensões totais dos elementos.
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 
+  Define uma classe .wrapper que usa display flex para alinhar 
+  os elementos filhos em uma linha e permite que eles quebrem 
+  para a próxima linha se necessário.
+*/
 .wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* 
+  Define que os elementos com a classe .img dentro de .wrapper 
+  terão uma largura de 33.3%.
+*/
 .wrapper .img {
   width: 33.3%;
 }
 
+/* 
+  Define que todas as imagens terão uma largura máxima de 100% 
+  do seu contêiner pai, garantindo que elas não ultrapassem 
+  os limites do contêiner.
+*/
 img {
   max-width: 100%;
 }
 
+/* 
+  Media query que aplica estilos específicos quando a largura 
+  da tela é de no máximo 1024px. Neste caso, mantém a largura 
+  dos elementos .img em 33.3%.
+*/
 @media screen and (max-width: 1024px) {
   .wrapper .img {
     width: 33.3%;
   }
 }
 
+/* 
+  Media query que aplica estilos específicos quando a largura 
+  da tela é de no máximo 768px. Neste caso, ajusta a largura 
+  dos elementos .img para 50%.
+*/
 @media screen and (max-width: 768px) {
   .wrapper .img {
     width: 50%;
   }
 }
 
+/* 
+  Media query que aplica estilos específicos quando a largura 
+  da tela é de no máximo 480px. Neste caso, ajusta a largura 
+  dos elementos .img para 100%.
+*/
 @media screen and (max-width: 480px) {
   .wrapper .img {
     width: 100%;
   }
 }
 
+/* 
+  Comentário que indica a localização do arquivo de mapa de origem 
+  para ferramentas de desenvolvimento, permitindo a depuração do CSS 
+  original mesmo após a minificação ou outras transformações.
+*/
 /*# sourceMappingURL=style.css.map */
