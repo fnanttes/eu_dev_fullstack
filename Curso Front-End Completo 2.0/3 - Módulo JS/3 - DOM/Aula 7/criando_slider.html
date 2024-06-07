@@ -6,7 +6,77 @@
     <title>Aula 7 - criando slider</title>
   </head>
   <body>
-    <style></style>
-    <script></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #slider {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #slider img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      #slider img:nth-child(1) {
+        animation: slider 10s linear infinite;
+      }
+
+      #slider img:nth-child(2) {
+        animation: slider 10s linear infinite;
+      }
+
+      #slider img:nth-child(3) {
+        animation: slider 10s linear infinite;
+      }
+
+      #slider img:nth-child(4) {
+        animation: slider 10s linear infinite;
+      }
+
+      #slider img:nth-child(5) {
+        animation: slider 10s linear infinite;
+      }
+
+      #slider img:nth-child(6) {
+        animation: slider 10s linear infinite;
+      }
+    </style>
+    <script>
+      function slider() {
+        var imgs = document.querySelectorAll("#slider img");
+        var i = 0;
+        setInterval(function () {
+          imgs[i].style.display = "none";
+          i++;
+          if (i == imgs.length) {
+            i = 0;
+          }
+          imgs[i].style.display = "block";
+        }, 10000);
+      }
+
+      slider();
+    </script>
+    <div id="slider">
+      <img src="img/1.jpg" />
+      <img src="img/2.jpg" />
+      <img src="img/3.jpg" />
+      <img src="img/4.jpg" />
+      <img src="img/5.jpg" />
+      <img src="img/6.jpg" />
+    </div>
+    <script>
+      slider();
+    </script>
   </body>
 </html>
