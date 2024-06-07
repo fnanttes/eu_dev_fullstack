@@ -1,24 +1,63 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML. */
+/* A propriedade "margin" define a margem externa de todos os elementos. */
+/* A propriedade "padding" define a margem interna de todos os elementos. */
+/* A propriedade "box-sizing" define como a largura e a altura de um elemento são calculadas. */
+/* O valor "border-box" especifica que a largura e a altura incluem os bordos, mas não incluem os paddings. */
+/* A propriedade "font-family" define a família de fontes dos elementos. */
+/* O valor "lato, sans-ser" especifica as fontes a serem usadas na ordem de prioridade. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: lato, sans-ser;
+  font-family: lato, sans-serif;
 }
 
+/* A regra "body" define as propriedades de estilo para o elemento com a tag "body". */
+/* A propriedade "background-color" define a cor de fundo do elemento. */
+/* O valor "#27282d" especifica a cor de fundo em hexadecimal. */
 body {
   background-color: #27282d;
 }
 
+/* A regra ".form" define as propriedades de estilo para os elementos com a classe "form". */
+/* A propriedade "text-align" define o alinhamento do texto dos elementos. */
+/* O valor "center" especifica que o texto é centralizado. */
+/* A propriedade "padding" define o preenchimento dos elementos. */
+/* O valor "20px" especifica o preenchimento de 20 pixels. */
 .form {
   text-align: center;
   padding: 20px;
 }
 
+/* A regra ".form img" define as propriedades de estilo para as imagens dentro dos elementos com a classe "form". */
+/* A propriedade "max-width" define a largura máxima da imagem. */
+/* O valor "500px" especifica a largura máxima de 500 pixels. */
+/* A propriedade "width" define a largura da imagem. */
+/* O valor "100%" especifica que a largura da imagem é 100% da largura do seu contêiner. */
 .form img {
   max-width: 500px;
   width: 100%;
 }
 
+/* A regra ".form input[type="text"],.form input[type="email"]" define as propriedades de estilo para os campos de entrada de texto e e-mail dentro dos elementos com a classe "form". */
+/* A propriedade "padding-left" define o preenchimento à esquerda dos elementos. */
+/* O valor "10px" especifica o preenchimento de 10 pixels. */
+/* A propriedade "display" define o tipo de layout dos elementos. */
+/* O valor "block" especifica que os elementos são blocos, ocupando uma linha completa. */
+/* A propriedade "border-radius" define a borda arredondada dos elementos. */
+/* O valor "20px" especifica a borda arredondada de 20 pixels. */
+/* A propriedade "margin" define a margem dos elementos. */
+/* O valor "10px auto" especifica uma margem de 10 pixels para cima e para baixo e automaticamente centralizada horizontalmente. */
+/* A propriedade "font-size" define o tamanho da fonte dos elementos. */
+/* O valor "16px" especifica o tamanho da fonte de 16 pixels. */
+/* A propriedade "max-width" define a largura máxima dos elementos. */
+/* O valor "500px" especifica a largura máxima de 500 pixels. */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "100%" especifica que a largura dos elementos é 100% da largura do seu contêiner. */
+/* A propriedade "padding" define o preenchimento dos elementos. */
+/* O valor "10px" especifica o preenchimento de 10 pixels. */
+/* A propriedade "border" define a borda dos elementos. */
+/* O valor "1px solid #ccc" especifica uma borda de 1 pixel sólida e cinza claro. */
 .form input[type="text"],
 .form input[type="email"] {
   padding-left: 10px;
@@ -32,6 +71,25 @@ body {
   border: 1px solid #ccc;
 }
 
+/* A regra ".form textarea" define as propriedades de estilo para as áreas de texto dentro dos elementos com a classe "form". */
+/* A propriedade "margin" define a margem dos elementos. */
+/* O valor "10px auto" especifica uma margem de 10 pixels para cima e para baixo e automaticamente centralizada horizontalmente. */
+/* A propriedade "resize" define se os usuários podem redimensionar os elementos. */
+/* O valor "vertical" especifica que os usuários podem redimensionar verticalmente, mas não horizontalmente. */
+/* A propriedade "display" define o tipo de layout dos elementos. */
+/* O valor "block" especifica que os elementos são blocos, ocupando uma linha completa. */
+/* A propriedade "border-radius" define a borda arredondada dos elementos. */
+/* O valor "20px" especifica a borda arredondada de 20 pixels. */
+/* A propriedade "margin" define a margem dos elementos. */
+/* O valor "10px auto" especifica uma margem de 10 pixels para cima e para baixo e automaticamente centralizada horizontalmente. */
+/* A propriedade "font-size" define o tamanho da fonte dos elementos. */
+/* O valor "16px" especifica o tamanho da fonte de 16 pixels. */
+/* A propriedade "max-width" define a largura máxima dos elementos. */
+/* O valor "500px" especifica a largura máxima de 500 pixels. */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "100%" especifica que a largura dos elementos é 100% da largura do seu contêiner. */
+/* A propriedade "height" define a altura dos elementos. */
+/* O valor "120px" especifica a altura de 120 pixels. */
 .form textarea {
   margin: 10px auto;
   resize: vertical;
@@ -44,6 +102,33 @@ body {
   height: 120px;
 }
 
+/* A regra ".form input[type="submit"]" define as propriedades de estilo para o botão de envio dentro dos elementos com a classe "form". */
+/* A propriedade "margin" define a margem dos elementos. */
+/* O valor "10px auto" especifica uma margem de 10 pixels para cima e para baixo e automaticamente centralizada horizontalmente. */
+/* A propriedade "resize" define se os usuários podem redimensionar os elementos. */
+/* O valor "vertical" especifica que os usuários podem redimensionar verticalmente, mas não horizontalmente. */
+/* A propriedade "display" define o tipo de layout dos elementos. */
+/* O valor "block" especifica que os elementos são blocos, ocupando uma linha completa. */
+/* A propriedade "border-radius" define a borda arredondada dos elementos. */
+/* O valor "20px" especifica a borda arredondada de 20 pixels. */
+/* A propriedade "margin" define a margem dos elementos. */
+/* O valor "10px auto" especifica uma margem de 10 pixels para cima e para baixo e automaticamente centralizada horizontalmente. */
+/* A propriedade "font-size" define o tamanho da fonte dos elementos. */
+/* O valor "16px" especifica o tamanho da fonte de 16 pixels. */
+/* A propriedade "max-width" define a largura máxima dos elementos. */
+/* O valor "500px" especifica a largura máxima de 500 pixels. */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "100%" especifica que a largura dos elementos é 100% da largura do seu contêiner. */
+/* A propriedade "height" define a altura dos elementos. */
+/* O valor "35px" especifica a altura de 35 pixels. */
+/* A propriedade "border" define a borda dos elementos. */
+/* O valor "0" especifica que não há borda. */
+/* A propriedade "cursor" define o cursor do mouse quando ele passa sobre os elementos. */
+/* O valor "pointer" especifica que o cursor é um ponteiro. */
+/* A propriedade "color" define a cor do texto dos elementos. */
+/* O valor "white" especifica a cor branca. */
+/* A propriedade "background-color" define a cor de fundo dos elementos. */
+/* O valor "darkorchid" especifica a cor de fundo em hexadecimal. */
 .form input[type="submit"] {
   margin: 10px auto;
   resize: vertical;
@@ -53,10 +138,9 @@ body {
   font-size: 16px;
   max-width: 500px;
   width: 100%;
-  height: 120px;
+  height: 35px;
+  border: 0;
   cursor: pointer;
   color: white;
   background-color: darkorchid;
-  height: 35px;
-  border: 0;
 }

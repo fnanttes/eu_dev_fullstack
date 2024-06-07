@@ -1,17 +1,33 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML */
+/* A propriedade "margin" define a margem dos elementos */
+/* O valor "0" especifica que não há margem */
+/* A propriedade "padding" define o preenchimento dos elementos */
+/* O valor "0" especifica que não há preenchimento */
+/* A propriedade "box-sizing" define como a largura e a altura dos elementos são calculadas */
+/* O valor "border-box" especifica que a largura e a altura incluem a borda */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* A regra ".teste h2.title" define as propriedades de estilo para os elementos <h2> com a classe "title" que estão dentro de um elemento com a classe "teste" */
+/* A propriedade "color" define a cor do texto dos elementos */
+/* O valor "green" especifica uma cor verde */
 .teste h2.title {
   color: green;
 }
 
+/* A regra "h2.title" define as propriedades de estilo para os elementos <h2> com a classe "title" */
+/* A propriedade "color" define a cor do texto dos elementos */
+/* O valor "green" especifica uma cor verde */
 h2.title {
   color: green;
 }
 
+/* A regra "h2" define as propriedades de estilo para os elementos <h2> */
+/* A propriedade "color" define a cor do texto dos elementos */
+/* O valor "red" especifica uma cor vermelha */
 h2 {
   color: red;
 }

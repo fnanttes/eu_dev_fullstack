@@ -1,33 +1,91 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML */
+/* A propriedade "margin" define a margem dos elementos */
+/* O valor "0" especifica que não há margem */
+/* A propriedade "padding" define o preenchimento dos elementos */
+/* O valor "0" especifica que não há preenchimento */
+/* A propriedade "box-sizing" define como a largura e a altura dos elementos são calculadas */
+/* O valor "border-box" especifica que a largura e a altura incluem a borda */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h2 {
-  font-size: 17px;
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+/* A regra ".poetsen-one-regular" define as propriedades de estilo para os elementos com a classe "poetsen-one-regular" */
+/* A propriedade "font-family" define a família de fontes dos elementos */
+/* O valor "Poetsen One" especifica a família de fontes "Poetsen One" */
+/* A propriedade "font-weight" define a espessura da fonte dos elementos */
+/* O valor "400" especifica a espessura normal da fonte */
+/* A propriedade "font-style" define o estilo da fonte dos elementos */
+/* O valor "normal" especifica o estilo normal da fonte */
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* A regra ".teste" define as propriedades de estilo para os elementos com a classe "teste" */
+/* A propriedade "color" define a cor dos elementos */
+/* O valor "red" especifica a cor vermelha */
 .teste {
   color: red;
 }
 
+/* A regra "#teste" define as propriedades de estilo para os elementos com o id "teste" */
+/* A propriedade "color" define a cor dos elementos */
+/* O valor "green" especifica a cor verde */
 #teste {
   color: green;
 }
 
+/* A regra ".paragrafo" define as propriedades de estilo para os elementos com a classe "paragrafo" */
+/* A propriedade "font-size" define o tamanho da fonte dos elementos */
+/* O valor "30px" especifica o tamanho da fonte de 30 pixels */
 .paragrafo {
   font-size: 30px;
 }
 
+/* A regra "div" define as propriedades de estilo para os elementos <div> */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "300px" especifica a largura de 300 pixels */
+/* A propriedade "height" define a altura dos elementos */
+/* O valor "300px" especifica a altura de 300 pixels */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "red" especifica a cor vermelha */
+/* A propriedade "margin" define a margem dos elementos */
+/* O valor "10px" especifica a margem de 10 pixels */
+/* A propriedade "padding" define o preenchimento dos elementos */
+/* O valor "10px" especifica o preenchimento de 10 pixels */
+/* A propriedade "border" define a borda dos elementos */
+/* O valor "1px solid black" especifica uma borda sólida de 1 pixel de cor preta */
+/* A propriedade "border-radius" define a borda arredondada dos elementos */
+/* O valor "10px" especifica a borda arredondada de 10 pixels */
+/* A propriedade "box-shadow" define a sombra caixa dos elementos */
+/* O valor "5px 5px 10px rgba(0, 0, 0, 0.5)" especifica uma sombra caixa de 5 pixels de deslocamento horizontal, 5 pixels de deslocamento vertical e 10 pixels de espalhamento com uma opacidade de 50% */
+/* A propriedade "text-align" define o alinhamento do texto dos elementos */
+/* O valor "center" especifica o alinhamento central do texto */
+/* A propriedade "font-size" define o tamanho da fonte dos elementos */
+/* O valor "20px" especifica o tamanho da fonte de 20 pixels */
+/* A propriedade "font-family" define a família de fontes dos elementos */
+/* O valor "Arial, Helvetica, sans-serif" especifica a família de fontes Arial, Helvetica e sans-serif */
+/* A propriedade "font-weight" define a espessura da fonte dos elementos */
+/* O valor "bold" especifica a espessura em negrito da fonte */
+/* A propriedade "color" define a cor dos elementos */
+/* O valor "white" especifica a cor branca */
+/* A propriedade "line-height" define a altura da linha dos elementos */
+/* O valor "30px" especifica a altura da linha de 30 pixels */
+/* A propriedade "cursor" define o cursor do mouse sobre os elementos */
+/* O valor "pointer" especifica um cursor de ponteiro */
+/* A propriedade "transition" define a transição dos elementos */
+/* O valor "0.5s" especifica uma transição de 0.5 segundos */
+/* A propriedade "position" define a posição dos elementos */
+/* O valor "relative" especifica a posição relativa */
+/* A propriedade "overflow" define o que acontece quando o conteúdo excede o espaço dos elementos */
+/* O valor "hidden" especifica que o conteúdo excedente é oculto */
+/* A propriedade "z-index" define a ordem z (plano de fundo) dos elementos */
+/* O valor "1" especifica a ordem z de 1 */
+/* A propriedade "display" define o tipo de layout dos elementos */
+/* O valor "flex" especifica um layout flexível */
 div {
   width: 300px;
   height: 300px;
@@ -51,6 +109,15 @@ div {
   display: flex;
 }
 
+/* A regra ".d1" define as propriedades de estilo para os elementos com a classe "d1" */
+/* A propriedade "display" define o tipo de layout dos elementos */
+/* O valor "inline-block" especifica um layout inline-block */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "blue" especifica a cor azul */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "300px" especifica a largura de 300 pixels */
+/* A propriedade "height" define a altura dos elementos */
+/* O valor "300px" especifica a altura de 300 pixels */
 .d1 {
   display: inline-block;
   background-color: blue;
@@ -58,6 +125,15 @@ div {
   height: 300px;
 }
 
+/* A regra ".d2" define as propriedades de estilo para os elementos com a classe "d2" */
+/* A propriedade "display" define o tipo de layout dos elementos */
+/* O valor "inline-block" especifica um layout inline-block */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "red" especifica a cor vermelha */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "300px" especifica a largura de 300 pixels */
+/* A propriedade "height" define a altura dos elementos */
+/* O valor "300px" especifica a altura de 300 pixels */
 .d2 {
   display: inline-block;
   background-color: red;
@@ -65,6 +141,15 @@ div {
   height: 300px;
 }
 
+/* A regra ".d3" define as propriedades de estilo para os elementos com a classe "d3" */
+/* A propriedade "display" define o tipo de layout dos elementos */
+/* O valor "inline-block" especifica um layout inline-block */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "green" especifica a cor verde */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "300px" especifica a largura de 300 pixels */
+/* A propriedade "height" define a altura dos elementos */
+/* O valor "300px" especifica a altura de 300 pixels */
 .d3 {
   display: inline-block;
   background-color: green;

@@ -1,37 +1,45 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Seletor universal, aplica as propriedades abaixo a todos os elementos */
+  margin: 0; /* Remove a margem em todos os elementos */
+  padding: 0; /* Remove o preenchimento em todos os elementos */
+  box-sizing: border-box; /* Define o modelo de caixa para incluir a borda no tamanho do elemento */
 }
 
 h2 {
-  font-size: 17px;
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* Seletor para elementos <h2> */
+  font-size: 17px; /* Define o tamanho da fonte para 17 pixels */
+  font-style: italic; /* Define o estilo da fonte como itálico */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a família de fontes para Verdana, Geneva, Tahoma e sans-serif */
 }
 
 .poetsen-one-regular {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  /* Seletor para elementos com a classe "poetsen-one-regular" */
+  font-family: "Poetsen One", sans-serif; /* Define a família de fontes para "Poetsen One" e sans-serif */
+  font-weight: 400; /* Define a espessura da fonte como normal (400) */
+  font-style: normal; /* Define o estilo da fonte como normal */
 }
 
 .teste {
-  color: red;
+  /* Seletor para elementos com a classe "teste" */
+  color: red; /* Define a cor do texto para vermelho */
 }
 
 #teste {
-  color: green;
+  /* Seletor para elementos com o id "teste" */
+  color: green; /* Define a cor do texto para verde */
 }
 
 .paragrafo {
-  font-size: 30px;
+  /* Seletor para elementos com a classe "paragrafo" */
+  font-size: 30px; /* Define o tamanho da fonte para 30 pixels */
 }
 
 p.paragrafo {
-  font-size: 30px;
+  /* Seletor para elementos <p> com a classe "paragrafo" */
+  font-size: 30px; /* Define o tamanho da fonte para 30 pixels */
 }
 
 [nome="parafrafo"] {
-  color: blue;
+  /* Seletor para elementos com o atributo "nome" definido como "parafrafo" */
+  color: blue; /* Define a cor do texto para azul */
 }

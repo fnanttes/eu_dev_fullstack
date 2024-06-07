@@ -13,40 +13,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- A tag <title> define o título do documento. -->
-    <title>HHTML Table Styling</title>
+    <title>HTML Table Styling</title>
 
     <!-- A tag <style> define um bloco de estilos CSS dentro do documento HTML. -->
     <style>
+      /* Define a cor de fundo para as linhas pares da tabela com um valor hexadecimal. */
       tr:nth-child(even) {
         background-color: #d6eeee;
       }
 
+      /* Define a cor de fundo para as células pares (td) e cabeçalhos (th) da tabela com um valor hexadecimal. */
       td:nth-child(even),
       th:nth-child(even) {
         background-color: #d6eeee;
       }
 
+      /* Define a cor de fundo para as linhas pares da tabela com um valor RGBA (Red, Green, Blue, Alpha). */
       tr:nth-child(even) {
         background-color: rgba(150, 212, 212, 0.4);
       }
 
+      /* Define a cor de fundo para as células pares (td) e cabeçalhos (th) da tabela com um valor RGBA. */
       th:nth-child(even),
       td:nth-child(even) {
         background-color: rgba(150, 212, 212, 0.4);
       }
 
+      /* Adiciona uma linha de borda inferior com um valor hexadecimal para todas as linhas da tabela. */
       tr {
         border-bottom: 1px solid #ddd;
       }
 
+      /* Altera a cor de fundo da linha quando o mouse passa por cima com um valor hexadecimal. */
       tr:hover {
         background-color: #d6eeee;
       }
     </style>
     <!-- A tag <link> define uma relação entre o documento e um recurso externo. -->
-    <!-- O atributo "rel" especifica a relação como "icon". -->
-    <!-- O atributo "type" especifica o tipo de recurso como "image/x-icon". -->
-    <!-- O atributo "href" especifica a URL do recurso. -->
+    <!-- Especifica a relação como "ícone" (icon). -->
+    <!-- Especifica o tipo de recurso como "imagem/ícone x-icon". -->
+    <!-- Especifica a URL do recurso. -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <!-- A tag <body> contém o conteúdo visível da página web. -->

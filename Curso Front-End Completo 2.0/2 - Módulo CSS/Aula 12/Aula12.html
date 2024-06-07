@@ -1,23 +1,89 @@
 <!DOCTYPE html>
+<!-- A declaração DOCTYPE especifica que este documento é um documento HTML5. -->
 <html lang="en">
   <head>
+    <!-- A tag <meta> define metadados sobre o documento HTML. -->
+    <!-- O atributo "charset" define a codificação de caracteres do documento. -->
+    <!-- O valor "UTF-8" especifica que a codificação de caracteres do documento é UTF-8. -->
     <meta charset="UTF-8" />
+
+    <!-- O atributo "name" define o nome do metadado. -->
+    <!-- O valor "viewport" especifica que os metadados se referem à visualização da página. -->
+    <!-- O atributo "content" define os valores dos metadados. -->
+    <!-- O valor "width=device-width, initial-scale=1.0" especifica que a largura da visualização da página deve corresponder à largura do dispositivo e a escala inicial deve ser 1.0. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A tag <link> define uma relação entre o documento HTML e um recurso externo. -->
+    <!-- O atributo "rel" define a relação entre o documento HTML e o recurso externo. -->
+    <!-- O valor "preconnect" especifica que o navegador deve estabelecer uma conexão antecipada com o recurso externo antes de ser necessário. -->
+    <!-- O atributo "href" define a localização do recurso externo. -->
+    <!-- O valor "https://fonts.googleapis.com" especifica a localização do recurso externo. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- O atributo "crossorigin" define se o recurso externo pode ser acessado de outros domínios. -->
+    <!-- O valor "crossorigin" especifica que o recurso externo pode ser acessado de outros domínios com a política de mesma origem. -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- A tag <link> define uma relação entre o documento HTML e um recurso externo. -->
+    <!-- O atributo "href" define a localização do recurso externo. -->
+    <!-- O valor "https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" especifica a localização do recurso externo. -->
+    <!-- O atributo "rel" define a relação entre o documento HTML e o recurso externo. -->
+    <!-- O valor "stylesheet" especifica que o recurso externo é uma folha de estilo. -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- A tag <link> define uma relação entre o documento HTML e um recurso externo. -->
+    <!-- O atributo "href" define a localização do recurso externo. -->
+    <!-- O valor "css/style.css" especifica a localização do recurso externo. -->
+    <!-- O atributo "rel" define a relação entre o documento HTML e o recurso externo. -->
+    <!-- O valor "stylesheet" especifica que o recurso externo é uma folha de estilo. -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- A tag <title> define o título do documento. -->
+    <!-- O texto "Aula 12: formulário de contato" é exibido na barra de título do navegador. -->
     <title>Aula 12: formulário de contato</title>
   </head>
   <body>
+    <!-- A tag <div> define um contêiner genérico. -->
+    <!-- A classe CSS "form" é aplicada ao contêiner. -->
     <div class="form">
+      <!-- A tag <img> define uma imagem. -->
+      <!-- O atributo "src" define a localização da imagem. -->
+      <!-- O valor "image/WhatsApp Image 2024-05-09 at 22.07.15.jpeg" especifica a localização da imagem. -->
+      <!-- O atributo "alt" define um texto alternativo para a imagem, caso ela não possa ser carregada. -->
       <img src="image/WhatsApp Image 2024-05-09 at 22.07.15.jpeg" alt="" />
+
+      <!-- A tag <input> define um campo de entrada de texto. -->
+      <!-- O atributo "type" define o tipo de campo de entrada. -->
+      <!-- O valor "text" especifica que o campo de entrada é um campo de entrada de texto. -->
+      <!-- O atributo "name" define o nome do campo de entrada. -->
+      <!-- O valor "nome" especifica o nome do campo de entrada. -->
+      <!-- O atributo "placeholder" define um texto de espaço reservado para o campo de entrada. -->
+      <!-- O valor "Seu nome..." especifica o texto de espaço reservado para o campo de entrada. -->
       <input type="text" name="nome" placeholder="Seu nome..." />
+
+      <!-- A tag <input> define um campo de entrada de e-mail. -->
+      <!-- O atributo "type" define o tipo de campo de entrada. -->
+      <!-- O valor "email" especifica que o campo de entrada é um campo de entrada de e-mail. -->
+      <!-- O atributo "name" define o nome do campo de entrada. -->
+      <!-- O valor "nome" especifica o nome do campo de entrada. -->
+      <!-- O atributo "placeholder" define um texto de espaço reservado para o campo de entrada. -->
+      <!-- O valor "Seu e-mail..." especifica o texto de espaço reservado para o campo de entrada. -->
       <input type="email" name="nome" placeholder="Seu e-mail..." />
+
+      <!-- A tag <textarea> define um campo de entrada de texto multilinha. -->
+      <!-- O atributo "name" define o nome do campo de entrada. -->
+      <!-- O valor "" especifica o nome do campo de entrada. -->
+      <!-- O atributo "placeholder" define um texto de espaço reservado para o campo de entrada. -->
+      <!-- O valor "Sua mensagem..." especifica o texto de espaço reservado para o campo de entrada. -->
       <textarea name="" id="" placeholder="Sua mensagem..."></textarea>
+
+      <!-- A tag <input> define um botão de envio. -->
+      <!-- O atributo "type" define o tipo de botão. -->
+      <!-- O valor "submit" especifica que o botão é um botão de envio. -->
+      <!-- O valor "Enviar" especifica o texto do botão. -->
       <input type="submit" value="Enviar" />
     </div>
   </body>

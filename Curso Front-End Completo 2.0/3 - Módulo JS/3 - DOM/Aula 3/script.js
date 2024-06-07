@@ -1,16 +1,12 @@
+// A variável "elementos" recebe um NodeList de elementos HTML que correspondem à classe "box".
 var elementos = document.getElementsByClassName("box");
-/*
-var el = elementos[0];
 
-el.style.width = "100px";
-el.style.height = "100px";
-el.style.backgroundColor = "green";
-el.style.marginLeft = "200px";
-*/
-
+// O loop "for" itera sobre cada elemento no NodeList "elementos".
 for (var i = 0; i < elementos.length; i++) {
+  // A variável "el" recebe o elemento atual no loop.
   var el = elementos[i];
 
+  // As propriedades de estilo CSS do elemento são alteradas para definir seu estilo.
   el.style.width = "100px";
   el.style.height = "100px";
   el.style.backgroundColor = "green";

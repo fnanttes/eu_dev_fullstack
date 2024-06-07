@@ -14,19 +14,22 @@
   <body>
     <!-- Corpo do documento -->
     <script>
+      // Uso da função fetch para fazer uma requisição HTTP
       fetch("https://jsonplaceholder.typicode.com/todos/1", {
-        method: "POST",
+        method: "POST", // Método da requisição
         body: JSON.stringify({
+          // Corpo da requisição em JSON
           title: "Ferilva's",
           body: "Meu Conteúdo",
           userId: 10,
         }),
         headers: {
+          // Cabeçalhos da requisição
           "Content-type": "application/json; charset=UTF-8",
         },
       })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((response) => response.json()) // Converte a resposta para JSON
+        .then((json) => console.log(json)); // Exibe o JSON no console do navegador
     </script>
   </body>
 </html>

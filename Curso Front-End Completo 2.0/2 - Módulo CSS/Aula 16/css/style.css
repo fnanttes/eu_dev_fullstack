@@ -1,24 +1,57 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML. */
+/* A propriedade "margin" define a margem externa de todos os elementos. */
+/* A propriedade "padding" define a margem interna de todos os elementos. */
+/* A propriedade "box-sizing" define como a largura e a altura de um elemento são calculadas. */
+/* O valor "border-box" especifica que a largura e a altura incluem os bordos, mas não incluem os paddings. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* A regra "header" define as propriedades de estilo para o cabeçalho. */
+/* A propriedade "display" define como os elementos filhos do cabeçalho são dispostos. */
+/* O valor "flex" especifica que os elementos filhos do cabeçalho são dispostos usando o layout flexível. */
 header {
   display: flex;
 }
 
+/* A regra ".w50" define as propriedades de estilo para os elementos com a classe "w50". */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "50%" especifica que a largura dos elementos é 50% da largura do seu contêiner pai. */
+/* A propriedade "padding" define a margem interna dos elementos. */
+/* O valor "0 10px" especifica que a margem interna esquerda e direita dos elementos é 0 pixels e 10 pixels, respectivamente. */
 .w50 {
   width: 50%;
   padding: 0 10px;
 }
 
+/* A regra ".menu" define as propriedades de estilo para os elementos com a classe "menu". */
+/* A propriedade "text-align" define o alinhamento do texto dos elementos. */
+/* O valor "right" especifica que o texto dos elementos é alinhado à direita. */
+/* A propriedade "justify-content" define como os elementos filhos são alinhados horizontalmente. */
+/* O valor "space-between" especifica que os elementos filhos são distribuídos com um espaço igual entre eles. */
+/* A propriedade "align-items" define como os elementos filhos são alinhados verticalmente. */
+/* O valor "center" especifica que os elementos filhos são centralizados verticalmente. */
 .menu {
   text-align: right;
   justify-content: space-between;
   align-items: center;
 }
 
+/* A regra "section.banner" define as propriedades de estilo para as seções com a classe "banner". */
+/* A propriedade "width" define a largura das seções. */
+/* O valor "100%" especifica que a largura das seções é 100% da largura da página. */
+/* A propriedade "min-height" define a altura mínima das seções. */
+/* O valor "500px" especifica que a altura mínima das seções é 500 pixels. */
+/* A propriedade "background-color" define a cor de fundo das seções. */
+/* O valor "darkblue" especifica que a cor de fundo das seções é azul escuro. */
+/* A propriedade "text-align" define o alinhamento do texto das seções. */
+/* O valor "center" especifica que o texto das seções é centralizado. */
+/* A propriedade "padding" define a margem interna das seções. */
+/* O valor "90px 0" especifica que a margem interna superior e inferior das seções é 90 pixels e 0 pixels, respectivamente. */
+/* A propriedade "color" define a cor do texto das seções. */
+/* O valor "white" especifica que a cor do texto das seções é branca. */
 section.banner {
   width: 100%;
   min-height: 500px;
@@ -28,17 +61,40 @@ section.banner {
   color: white;
 }
 
+/* A regra "section.diferenciais" define as propriedades de estilo para as seções com a classe "diferenciais". */
+/* A propriedade "display" define como os elementos filhos das seções são dispostos. */
+/* O valor "flex" especifica que os elementos filhos das seções são dispostos usando o layout flexível. */
+/* A propriedade "text-align" define o alinhamento do texto dos elementos. */
+/* O valor "center" especifica que o texto dos elementos é centralizado. */
+/* A propriedade "padding" define a margem interna das seções. */
+/* O valor "20px 0" especifica que a margem interna superior e inferior das seções é 20 pixels e 0 pixels, respectivamente. */
 section.diferenciais {
   display: flex;
   text-align: center;
   padding: 20px 0;
 }
 
+/* A regra ".w33" define as propriedades de estilo para os elementos com a classe "w33". */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "33%" especifica que a largura dos elementos é 33% da largura do seu contêiner pai. */
+/* A propriedade "padding" define a margem interna dos elementos. */
+/* O valor "0 10px" especifica que a margem interna esquerda e direita dos elementos é 0 pixels e 10 pixels, respectivamente. */
 .w33 {
   width: 33%;
   padding: 0 10px;
 }
 
+/* A regra "footer" define as propriedades de estilo para o rodapé. */
+/* A propriedade "text-align" define o alinhamento do texto do rodapé. */
+/* O valor "center" especifica que o texto do rodapé é centralizado. */
+/* A propriedade "padding" define a margem interna do rodapé. */
+/* O valor "20px 0" especifica que a margem interna superior e inferior do rodapé é 20 pixels e 0 pixels, respectivamente. */
+/* A propriedade "background-color" define a cor de fundo do rodapé. */
+/* O valor "#27282d" especifica que a cor de fundo do rodapé é cinza escuro. */
+/* A propriedade "color" define a cor do texto do rodapé. */
+/* O valor "white" especifica que a cor do texto do rodapé é branca. */
+/* A propriedade "font-size" define o tamanho da fonte do texto do rodapé. */
+/* O valor "14px" especifica que o tamanho da fonte do texto do rodapé é 14 pixels. */
 footer {
   text-align: center;
   padding: 20px 0;

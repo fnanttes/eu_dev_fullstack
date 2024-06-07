@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- A tag <meta> define metadados sobre o documento HTML. -->
+    <!-- O atributo "charset" define a codificação de caracteres do documento. -->
+    <!-- O valor "UTF-8" especifica a codificação Unicode de 8 bits. -->
     <meta charset="UTF-8" />
+
+    <!-- O atributo "name" define o nome do metadado. -->
+    <!-- O valor "viewport" especifica que o documento deve ser dimensionado e renderizado para a largura da tela do dispositivo. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A tag <title> define o título do documento. -->
     <title>Aula 5 - animações</title>
   </head>
   <body>
     <style>
+      /* O seletor CSS.box define as propriedades do elemento div com a classe box. */
       .box {
         width: 200px;
         height: 200px;
         background-color: red;
         margin-left: 0px;
       }
+
+      /* O seletor CSS.animEsquerda define as propriedades do elemento div com a classe animEsquerda. */
+      /* A propriedade transition define a duração da transição. */
+      /* As propriedades margin-left, margin-top e background-color definem as alterações de estilo durante a transição. */
       .animEsquerda {
         transition: 1s;
         margin-left: 10px;
@@ -20,14 +33,18 @@
         background-color: green;
       }
     </style>
+
+    <!-- O elemento div com a classe box é o elemento que receberá a animação. -->
     <div class="box"></div>
+
     <script>
+      /* A variável box recebe o primeiro elemento div com a classe box do documento. */
       var box = document.querySelectorAll(".box")[0];
-      /*
-      setTimeout(() => {
-        box.classList.add("animEsquerda");
-      }, 1000);
-      */
+
+      /* O evento de clique é adicionado ao elemento box. */
+      /* Quando o elemento box é clicado, a função anônima é executada. */
+      /* Dentro da função, a classe animEsquerda é adicionada ao elemento box. */
+      /* Como a classe animEsquerda define uma transição CSS, a alteração de estilo será animada. */
       box.addEventListener("click", () => {
         box.classList.add("animEsquerda");
       });

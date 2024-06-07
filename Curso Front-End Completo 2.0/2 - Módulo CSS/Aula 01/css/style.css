@@ -1,6 +1,6 @@
 * {
   /* O asterisco (*) é um seletor universal que seleciona todos os elementos HTML */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove a margem em todos os elementos */
+  padding: 0; /* Remove o preenchimento em todos os elementos */
+  box-sizing: border-box; /* Define o modelo de caixa para incluir a borda no tamanho do elemento */
 }

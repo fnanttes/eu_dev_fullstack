@@ -1,73 +1,83 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Seletor universal, aplica as propriedades abaixo a todos os elementos */
+  margin: 0; /* Remove a margem em todos os elementos */
+  padding: 0; /* Remove o preenchimento em todos os elementos */
+  box-sizing: border-box; /* Define o modelo de caixa para incluir a borda no tamanho do elemento */
 }
 
 h2 {
-  font-size: 17px;
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* Seletor para elementos <h2> */
+  font-size: 17px; /* Define o tamanho da fonte para 17 pixels */
+  font-style: italic; /* Define o estilo da fonte como itálico */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a família de fontes para Verdana, Geneva, Tahoma e sans-serif */
 }
 
 .poetsen-one-regular {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  /* Seletor para elementos com a classe "poetsen-one-regular" */
+  font-family: "Poetsen One", sans-serif; /* Define a família de fontes para "Poetsen One" e sans-serif */
+  font-weight: 400; /* Define a espessura da fonte como normal (400) */
+  font-style: normal; /* Define o estilo da fonte como normal */
 }
 
 .teste {
-  color: red;
+  /* Seletor para elementos com a classe "teste" */
+  color: red; /* Define a cor do texto para vermelho */
 }
 
 #teste {
-  color: green;
+  /* Seletor para elementos com o id "teste" */
+  color: green; /* Define a cor do texto para verde */
 }
 
 .paragrafo {
-  font-size: 30px;
+  /* Seletor para elementos com a classe "paragrafo" */
+  font-size: 30px; /* Define o tamanho da fonte para 30 pixels */
 }
 
 div {
-  width: 300px;
-  height: 300px;
-  background-color: red;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
-  line-height: 30px;
-  cursor: pointer;
-  transition: 0.5s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  display: flex;
+  /* Seletor para elementos <div> */
+  width: 300px; /* Define a largura do elemento para 300 pixels */
+  height: 300px; /* Define a altura do elemento para 300 pixels */
+  background-color: red; /* Define a cor de fundo do elemento para vermelho */
+  margin: 10px; /* Define a margem do elemento para 10 pixels */
+  padding: 10px; /* Define o preenchimento do elemento para 10 pixels */
+  border: 1px solid black; /* Define a borda do elemento para 1 pixel sólido e preta */
+  border-radius: 10px; /* Define a borda arredondada do elemento para 10 pixels */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Define a sombra caixa do elemento para 5 pixels na horizontal, 5 pixels na vertical e 10 pixels de espaçamento com opacidade de 50% */
+  text-align: center; /* Define o alinhamento do texto do elemento para centralizado */
+  font-size: 20px; /* Define o tamanho da fonte do texto do elemento para 20 pixels */
+  font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes do texto do elemento para Arial, Helvetica e sans-serif */
+  font-weight: bold; /* Define a espessura da fonte do texto do elemento como negrito */
+  color: white; /* Define a cor do texto do elemento para branco */
+  line-height: 30px; /* Define a altura da linha do texto do elemento para 30 pixels */
+  cursor: pointer; /* Define o cursor do mouse sobre o elemento para um ponteiro */
+  transition: 0.5s; /* Define uma transição de 0.5 segundos para as propriedades alteradas */
+  position: relative; /* Define a posição do elemento como relativa */
+  overflow: hidden; /* Define o que acontece quando o conteúdo excede o espaço do elemento, escondendo o excedente */
+  z-index: 1; /* Define a ordem z (plano de fundo) do elemento para 1 */
+  display: flex; /* Define o tipo de layout do elemento para flex */
 }
 
 .d1 {
-  display: inline-block;
-  background-color: blue;
-  width: 300px;
-  height: 300px;
+  /* Seletor para elementos com a classe "d1" */
+  display: inline-block; /* Define o tipo de layout do elemento para inline-block */
+  background-color: blue; /* Define a cor de fundo do elemento para azul */
+  width: 300px; /* Define a largura do elemento para 300 pixels */
+  height: 300px; /* Define a altura do elemento para 300 pixels */
 }
 
 .d2 {
-  display: inline-block;
-  background-color: red;
-  width: 300px;
-  height: 300px;
+  /* Seletor para elementos com a classe "d2" */
+  display: inline-block; /* Define o tipo de layout do elemento para inline-block */
+  background-color: red; /* Define a cor de fundo do elemento para vermelho */
+  width: 300px; /* Define a largura do elemento para 300 pixels */
+  height: 300px; /* Define a altura do elemento para 300 pixels */
 }
 
 .d3 {
-  display: inline-block;
-  background-color: green;
-  width: 300px;
-  height: 300px;
+  /* Seletor para elementos com a classe "d3" */
+  display: inline-block; /* Define o tipo de layout do elemento para inline-block */
+  background-color: green; /* Define a cor de fundo do elemento para verde */
+  width: 300px; /* Define a largura do elemento para 300 pixels */
+  height: 300px; /* Define a altura do elemento para 300 pixels */
 }

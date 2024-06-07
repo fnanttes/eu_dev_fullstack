@@ -1,25 +1,56 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML */
+/* A propriedade "margin" define a margem dos elementos */
+/* O valor "0" especifica que não há margem */
+/* A propriedade "padding" define o preenchimento dos elementos */
+/* O valor "0" especifica que não há preenchimento */
+/* A propriedade "box-sizing" define como a largura e a altura dos elementos são calculadas */
+/* O valor "border-box" especifica que a largura e a altura incluem a borda */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* A regra ".container" define as propriedades de estilo para os elementos com a classe "container" */
+/* A propriedade "display" define o tipo de layout dos elementos */
+/* O valor "flex" especifica que os elementos serão dispostos usando o layout flexível */
+/* A propriedade "-ms-flex-wrap" define se os elementos serão quebrados em várias linhas para adequar-se ao contêiner */
+/* O valor "wrap" especifica que os elementos serão quebrados em várias linhas */
 .container {
   display: flex;
   -ms-flex-wrap: wrap;
 }
 
+/* A regra ".d1" define as propriedades de estilo para os elementos com a classe "d1" */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "100%" especifica que a largura dos elementos será igual à largura do contêiner */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "blue" especifica uma cor azul */
 .d1 {
   width: 100%;
   background-color: blue;
 }
 
+/* A regra ".d2" define as propriedades de estilo para os elementos com a classe "d2" */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "50%" especifica que a largura dos elementos será igual à metade da largura do contêiner */
+/* A propriedade "height" define a altura dos elementos */
+/* O valor "300px" especifica que a altura dos elementos será de 300 pixels */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "red" especifica uma cor vermelha */
 .d2 {
   width: 50%;
   height: 300px;
   background-color: red;
 }
 
+/* A regra ".d3" define as propriedades de estilo para os elementos com a classe "d3" */
+/* A propriedade "width" define a largura dos elementos */
+/* O valor "50%" especifica que a largura dos elementos será igual à metade da largura do contêiner */
+/* A propriedade "height" define a altura dos elementos */
+/* O valor "300px" especifica que a altura dos elementos será de 300 pixels */
+/* A propriedade "background-color" define a cor de fundo dos elementos */
+/* O valor "green" especifica uma cor verde */
 .d3 {
   width: 50%;
   height: 300px;

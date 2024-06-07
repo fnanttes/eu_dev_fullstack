@@ -1,15 +1,34 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML. */
+/* A propriedade "margin" define a margem externa de todos os elementos. */
+/* A propriedade "padding" define a margem interna de todos os elementos. */
+/* A propriedade "box-sizing" define como a largura e a altura de um elemento são calculadas. */
+/* O valor "border-box" especifica que a largura e a altura incluem os bordos, mas não incluem os paddings. */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box];
+  box-sizing: border-box;
 }
 
+/* A regra ".box" define as propriedades de estilo para os elementos com a classe "box". */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "500px" especifica que a largura dos elementos é 500 pixels. */
+/* A propriedade "height" define a altura dos elementos. */
+/* O valor "500px" especifica que a altura dos elementos é 500 pixels. */
+/* A propriedade "background-color" define a cor de fundo dos elementos. */
+/* O valor "cyan" especifica que a cor de fundo dos elementos é ciano. */
 .box {
   width: 500px;
   height: 500px;
   background-color: cyan;
 }
 
+/* A regra de mídia "@media screen and (min-width: 768px)" define as propriedades de estilo para os elementos com a classe "box" somente quando a largura da tela é de pelo menos 768 pixels. */
+/* A propriedade "width" define a largura dos elementos. */
+/* O valor "700px" especifica que a largura dos elementos é 700 pixels. */
+/* A propriedade "height" define a altura dos elementos. */
+/* O valor "700px" especifica que a altura dos elementos é 700 pixels. */
+/* A propriedade "background-color" define a cor de fundo dos elementos. */
+/* O valor "blue" especifica que a cor de fundo dos elementos é azul. */
 @media screen and (min-width: 768px) {
   .box {
     width: 700px;
@@ -18,6 +37,9 @@
   }
 }
 
+/* A regra de mídia "@media screen and (max-width: 400px)" define as propriedades de estilo para os elementos com a classe "box" somente quando a largura da tela é de no máximo 400 pixels. */
+/* A propriedade "background-color" define a cor de fundo dos elementos. */
+/* O valor "red" especifica que a cor de fundo dos elementos é vermelho. */
 @media screen and (max-width: 400px) {
   .box {
     background-color: red;

@@ -1,15 +1,33 @@
+/* A regra universal "*" define as propriedades de estilo para todos os elementos HTML. */
+/* A propriedade "margin" define a margem externa de todos os elementos. */
+/* A propriedade "padding" define a margem interna de todos os elementos. */
+/* A propriedade "box-sizing" define como a largura e a altura de um elemento são calculadas. */
+/* O valor "border-box" especifica que a largura e a altura incluem os bordos, mas não incluem os paddings. */
+/* A propriedade "font-family" define a família de fontes dos elementos. */
+/* O valor "lato, sans-ser" especifica as fontes a serem usadas na ordem de prioridade. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: lato, sans-ser;
+  font-family: lato, sans-serif;
 }
 
+/* A regra ":root" define as variáveis CSS globais. */
+/* As variáveis CSS globais podem ser acessadas usando a função "var(--nome-da-variavel)". */
+/* A variável "--corPadrao" é definida com o valor "blue". */
+/* A variável "--widthPadrao" é definida com o valor "1100px". */
 :root {
   --corPadrao: blue;
   --widthPadrao: 1100px;
 }
 
+/* A regra "div" define as propriedades de estilo para os elementos com a tag "div". */
+/* A propriedade "background-color" define a cor de fundo dos elementos. */
+/* O valor "var(--corPadrao)" especifica que a cor de fundo dos elementos é a cor armazenada na variável "--corPadrao". */
+/* A propriedade "max-width" define a largura máxima dos elementos. */
+/* O valor "var(--widthPadrao)" especifica que a largura máxima dos elementos é a largura armazenada na variável "--widthPadrao". */
+/* A propriedade "margin" define a margem dos elementos. */
+/* O valor "0 auto" especifica que a margem esquerda e direita são automaticamente calculadas para centralizar o elemento na página. */
 div {
   background-color: var(--corPadrao);
   max-width: var(--widthPadrao);
