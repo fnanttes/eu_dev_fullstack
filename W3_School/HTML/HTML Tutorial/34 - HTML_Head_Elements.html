@@ -1,0 +1,46 @@
+<!-- O documento HTML define a estrutura básica de uma página web. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- A tag <head> contém metadados sobre o documento, como o título e configurações de codificação. -->
+  <head>
+    <!-- A tag <meta> define metadados sobre o documento HTML. -->
+    <!-- O atributo "charset" define a codificação de caracteres do documento. -->
+    <meta charset="UTF-8" />
+
+    <!-- O atributo "name" define o nome do metadado. -->
+    <!-- Os atributos "description", "keywords", e "author" definem a descrição, palavras-chave, e autor do documento, respectivamente. -->
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+
+    <!-- O atributo "name" define o nome do metadado. -->
+    <!-- O atributo "viewport" especifica que o documento deve ser dimensionado e renderizado para a largura da tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- A tag <title> define o título do documento. -->
+    <title>HTML Head Elements</title>
+  </head>
+  <!-- Contém o conteúdo visível da página web. -->
+  <body>
+    <!-- A tag <img> define uma imagem em um documento HTML. -->
+    <!-- Os atributos "src", "width", "height", e "alt" definem a origem, dimensões, e texto alternativo da imagem, respectivamente. -->
+    <img src="images/stickman.gif" width="24" height="39" alt="Stickman" />
+
+    <!-- A tag <a> define um hiperlink em um documento HTML. -->
+    <!-- O atributo "href" define a URL do link. -->
+    <a href="tags/tag_base.asp">HTML base Tag</a>
+
+    <!-- A tag <p> define um parágrafo em um documento HTML. -->
+    <!-- O atributo "id" define um identificador exclusivo para o elemento. -->
+    <p id="demo"></p>
+
+    <!-- A tag <script> define um script JavaScript em um documento HTML. -->
+    <!-- A função "myFunction" é definida dentro do script. -->
+    <!-- A função é chamada quando o evento "onload" é disparado no elemento com o atributo "id" igual a "demo". -->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+    </script>
+  </body>
+</html>
