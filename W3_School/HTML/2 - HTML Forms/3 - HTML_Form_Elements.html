@@ -1,0 +1,98 @@
+<!-- Início da declaração do documento HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- Cabeçalho do documento -->
+  <head>
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Define as dimensões e comportamento da página para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>HTML Form Elements</title>
+  </head>
+  <!-- Corpo do documento -->
+  <body>
+    <!-- Campo de texto para entrada de nome -->
+    <label for="fname">Nome:</label>
+    <input type="text" id="fname" name="fname" />
+
+    <!-- Caixa de seleção para escolha de carros -->
+    <label for="cars">Escolha um carro:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <!-- Opção pré-selecionada na caixa de seleção -->
+    <option value="fiat" selected>Fiat</option>
+
+    <!-- Caixa de seleção com tamanho definido -->
+    <label for="cars">Escolha um carro:</label>
+    <select id="cars" name="cars" size="3">
+      <!--... -->
+    </select>
+
+    <!-- Caixa de seleção múltipla com tamanho definido -->
+    <label for="cars">Escolha um carro:</label>
+    <select id="cars" name="cars" size="4" multiple>
+      <!--... -->
+    </select>
+
+    <!-- Área de texto para entrada de texto longo -->
+    <textarea name="message" rows="10" cols="30">
+  O gato estava brincando no jardim.
+</textarea
+    >
+
+    <!-- Área de texto com estilo personalizado -->
+    <textarea name="message" style="width: 200px; height: 600px">
+  O gato estava brincando no jardim.
+</textarea
+    >
+
+    <!-- Botão para ação JavaScript -->
+    <button type="button" onclick="alert('Hello World!')">Clique Aqui!</button>
+
+    <!-- Formulário com campos de entrada e botão de envio -->
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Informações Pessoais:</legend>
+        <label for="fname">Nome:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Sobrenome:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+
+    <!-- Caixa de entrada com lista de opções pré-definidas -->
+    <form action="/action_page.php">
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+    </form>
+
+    <!-- Formulário com campos de entrada de número e range, e saída de resultado -->
+    <form
+      action="/action_page.php"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+<!-- Fim do documento HTML -->
