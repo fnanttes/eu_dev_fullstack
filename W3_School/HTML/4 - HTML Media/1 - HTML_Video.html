@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento para o navegador -->
+<html lang="pt-br">
+  <!-- Inicia a tag raiz do documento HTML e define a linguagem -->
+  <head>
+    <!-- Cabeçalho do documento, contém metadados e links para recursos externos -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres do documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define as configurações de visualização para dispositivos móveis -->
+    <title>HTML Video</title>
+    <!-- Define o título da página -->
+  </head>
+  <body>
+    <!-- Corpo do documento, contém o conteúdo visível -->
+    <video width="320" height="240" controls>
+      <!-- Tag de vídeo, define um elemento de vídeo com atributos de largura, altura e controles -->
+      <source src="movie.mp4" type="video/mp4" />
+      <!-- Tag de fonte, define a fonte de vídeo com atributos de origem e tipo -->
+      <source src="movie.ogg" type="video/ogg" />
+      <!-- Tag de fonte, define a fonte de vídeo com atributos de origem e tipo -->
+      Seu navegador não suporta a tag de vídeo.
+      <!-- Conteúdo alternativo caso o navegador não suporte a tag de vídeo -->
+    </video>
+
+    <video width="320" height="240" autoplay>
+      <!-- Tag de vídeo, define um elemento de vídeo com atributos de largura, altura e autoplay -->
+      <source src="movie.mp4" type="video/mp4" />
+      <!-- Tag de fonte, define a fonte de vídeo com atributos de origem e tipo -->
+      <source src="movie.ogg" type="video/ogg" />
+      <!-- Tag de fonte, define a fonte de vídeo com atributos de origem e tipo -->
+      Seu navegador não suporta a tag de vídeo.
+      <!-- Conteúdo alternativo caso o navegador não suporte a tag de vídeo -->
+    </video>
+
+    <video width="320" height="240" autoplay muted>
+      <!-- Tag de vídeo, define um elemento de vídeo com atributos de largura, altura, autoplay e muted -->
+      <source src="movie.mp4" type="video/mp4" />
+      <!-- Tag de fonte, define a fonte de vídeo com atributos de origem e tipo -->
+      <source src="movie.ogg" type="video/ogg" />
+      <!-- Tag de fonte, define a fonte de vídeo com atributos de origem e tipo -->
+      Seu navegador não suporta a tag de vídeo.
+      <!-- Conteúdo alternativo caso o navegador não suporte a tag de vídeo -->
+    </video>
+  </body>
+</html>

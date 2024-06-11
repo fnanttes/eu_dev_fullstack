@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento para o navegador -->
+
+<html lang="pt-br">
+  <!-- Inicia a tag raiz do documento HTML e define a linguagem -->
+
+  <head>
+    <!-- Cabeçalho do documento, contém metadados e links para recursos externos -->
+
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres do documento -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define as configurações de visualização para dispositivos móveis -->
+
+    <title>HTML Audio</title>
+    <!-- Define o título da página -->
+  </head>
+
+  <body>
+    <!-- Corpo do documento HTML -->
+
+    <audio controls>
+      <!-- Tag de áudio com controles de reprodução -->
+
+      <source src="horse.ogg" type="audio/ogg" />
+      <!-- Fonte de áudio em formato OGG -->
+
+      <source src="horse.mp3" type="audio/mpeg" />
+      <!-- Fonte de áudio em formato MP3 -->
+
+      Seu navegador não suporta a tag de áudio.
+      <!-- Mensagem de fallback caso o navegador não suporte a tag de áudio -->
+    </audio>
+
+    <audio controls autoplay>
+      <!-- Tag de áudio com controles de reprodução e autoplay -->
+
+      <source src="horse.ogg" type="audio/ogg" />
+      <!-- Fonte de áudio em formato OGG -->
+
+      <source src="horse.mp3" type="audio/mpeg" />
+      <!-- Fonte de áudio em formato MP3 -->
+
+      Seu navegador não suporta a tag de áudio.
+      <!-- Mensagem de fallback caso o navegador não suporte a tag de áudio -->
+    </audio>
+
+    <audio controls autoplay muted>
+      <!-- Tag de áudio com controles de reprodução, autoplay e mudo -->
+
+      <source src="horse.ogg" type="audio/ogg" />
+      <!-- Fonte de áudio em formato OGG -->
+
+      <source src="horse.mp3" type="audio/mpeg" />
+      <!-- Fonte de áudio em formato MP3 -->
+
+      Seu navegador não suporta a tag de áudio.
+      <!-- Mensagem de fallback caso o navegador não suporte a tag de áudio -->
+    </audio>
+  </body>
+</html>

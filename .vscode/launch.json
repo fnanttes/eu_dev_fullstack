@@ -1,20 +1,62 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "totvs_language_debug",
-			"request": "launch",
-			"name": "Depuração do idioma TOTVS",
-			"program": "${command:AskForProgramName}",
-			"cwb": "${workspaceFolder}",
-			"smartclientBin": "../totvs/bin/smartclient/smartclient.exe",
-			"isMultiSession": true,
-			"enableTableSync": true,
-			"extendFeatures": {
-				"charDetails": false
-			}
-		}
-	],
-	"lastProgramExecuted": "<cancel>",
-	"lastProgramArguments": []
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "totvs_language_debug",
+      "request": "launch",
+      "name": "Depuração do idioma TOTVS",
+      "program": "${command:AskForProgramName}",
+      "cwb": "${workspaceFolder}",
+      "smartclientBin": "../totvs/bin/smartclient/smartclient.exe",
+      "isMultiSession": true,
+      "enableTableSync": true,
+      "extendFeatures": {
+        "charDetails": false
+      }
+    },
+    {
+      "type": "pwa-msedge",
+      "name": "Launch Microsoft Edge",
+      "request": "launch",
+      "runtimeArgs": ["--remote-debugging-port=9222"],
+      "url": "/home/filipe-nantes/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.5/out/startpage/index.html", // Provide your project's url to finish configuring
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "type": "pwa-msedge",
+      "name": "Launch Microsoft Edge in headless mode",
+      "request": "launch",
+      "runtimeArgs": ["--headless", "--remote-debugging-port=9222"],
+      "url": "file:///home/filipe-nantes/Documentos/github/danki_code/W3_School/HTML/5 - HTML APIs/1 - HTML_Geolocation.html",
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "type": "vscode-edge-devtools.debug",
+      "name": "Open Edge DevTools",
+      "request": "attach",
+      "url": "file:///home/filipe-nantes/Documentos/github/danki_code/W3_School/HTML/5 - HTML APIs/1 - HTML_Geolocation.html",
+      "presentation": {
+        "hidden": true
+      }
+    }
+  ],
+  "lastProgramExecuted": "<cancel>",
+  "lastProgramArguments": [],
+  "compounds": [
+    {
+      "name": "Launch Edge Headless and attach DevTools",
+      "configurations": [
+        "Launch Microsoft Edge in headless mode",
+        "Open Edge DevTools"
+      ]
+    },
+    {
+      "name": "Launch Edge and attach DevTools",
+      "configurations": ["Launch Microsoft Edge", "Open Edge DevTools"]
+    }
+  ]
 }
