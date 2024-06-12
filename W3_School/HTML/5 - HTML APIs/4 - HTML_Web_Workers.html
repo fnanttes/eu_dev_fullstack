@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento para o navegador -->
+<html lang="pt-br">
+  <!-- Início do documento HTML, com a linguagem definida como português do Brasil -->
+  <head>
+    <!-- Cabeçalho do documento, onde ficam metadados e links para CSS, JavaScript, etc. -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define as configurações de visualização para dispositivos móveis -->
+    <title>HTML Web Workers</title>
+    <!-- Título da página -->
+  </head>
+  <body>
+    <!-- Corpo do documento, onde fica o conteúdo principal -->
+    <p>Contar números: <output id="result"></output></p>
+    <!-- Parágrafo com um elemento output para mostrar resultados -->
+    <button onclick="startWorker()">Iniciar Worker</button>
+    <!-- Botão para iniciar o Web Worker -->
+    <button onclick="stopWorker()">Parar Worker</button>
+    <!-- Botão para parar o Web Worker -->
+
+    <script>
+      //<!-- Início do script JavaScript -->
+      var w; //<!-- Variável global para armazenar a instância do Web Worker -->
+      function startWorker() {
+        //<!-- Função para iniciar o Web Worker -->
+        if (typeof Worker !== "undefined") {
+          //<!-- Verifica se o navegador suporta Web Workers -->
+          if (typeof w == "undefined") {
+            //<!-- Verifica se o Web Worker já está iniciado -->
+            w = new Worker("demo_workers.js"); //<!-- Cria uma nova instância do Web Worker -->
+          }
+          w.onmessage = function (event) {
+            //<!-- Evento que é disparado quando o Web Worker envia uma mensagem -->
+            document.getElementById("result").innerHTML = event.data; //<!-- Atualiza o conteúdo do elemento output -->
+          };
+        } else {
+          document.getElementById("result").innerHTML =
+            "Desculpe! Seu navegador não suporta Web Workers."; //<!-- Mensagem de erro caso o navegador não suporte Web Workers -->
+        }
+      }
+
+      function stopWorker() {
+        //<!-- Função para parar o Web Worker -->
+        w.terminate(); //<!-- Encerra o Web Worker -->
+        w = undefined; //<!-- Limpa a variável global -->
+      }
+    </script>
+  </body>
+</html>

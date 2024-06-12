@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento para o navegador -->
+<html lang="pt-br">
+  <!-- Início do documento HTML, com a linguagem definida como português do Brasil -->
+  <head>
+    <!-- Cabeçalho do documento, onde ficam metadados e links para CSS, JavaScript, etc. -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define as configurações de visualização para dispositivos móveis -->
+    <title>HTML SSE</title>
+    <!-- Título da página -->
+  </head>
+  <body>
+    <!-- Corpo do documento, onde fica o conteúdo principal -->
+    <script>
+      //<!-- Início do script JavaScript -->
+      var source = new EventSource("demo_sse.php"); //<!-- Cria uma nova conexão de EventSource com o arquivo PHP -->
+      source.onmessage = function (event) {
+        //<!-- Evento que é disparado quando uma nova mensagem é recebida -->
+        document.getElementById("result").innerHTML += event.data + "<br>"; //<!-- Atualiza o conteúdo do elemento com id 'esult', adicionando a nova mensagem -->
+      };
+    </script>
+  </body>
+</html>

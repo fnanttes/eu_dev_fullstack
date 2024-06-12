@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento para o navegador -->
+<html lang="pt-br">
+  <!-- Início do documento HTML, com a linguagem definida como português do Brasil -->
+  <head>
+    <!-- Cabeçalho do documento, onde ficam metadados e links para CSS, JavaScript, etc. -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define as configurações de visualização para dispositivos móveis -->
+    <title>HTML Web Storage</title>
+    <!-- Título da página -->
+  </head>
+  <body>
+    <!-- Corpo do documento, onde fica o conteúdo principal -->
+    <script>
+      //<!-- Início do script JavaScript -->
+      if (localStorage.clickcount) {
+        //<!-- Verifica se existe um valor no localStorage chamado 'clickcount' -->
+        localStorage.clickcount = Number(localStorage.clickcount) + 1; //<!-- Se existir, incrementa o valor -->
+      } else {
+        localStorage.clickcount = 1; //<!-- Se não existir, inicializa com 1 -->
+      }
+      document.getElementById("result").innerHTML = //<!-- Atualiza o conteúdo do elemento com id 'esult' -->
+        "Você clicou no botão " + localStorage.clickcount + " vez(es).";
+
+      if (sessionStorage.clickcount) {
+        //<!-- Verifica se existe um valor no sessionStorage chamado 'clickcount' -->
+        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1; //<!-- Se existir, incrementa o valor -->
+      } else {
+        sessionStorage.clickcount = 1; //<!-- Se não existir, inicializa com 1 -->
+      }
+      document.getElementById("result").innerHTML = //<!-- Atualiza o conteúdo do elemento com id 'esult' -->
+        "Você clicou no botão " +
+        sessionStorage.clickcount +
+        " vez(es) nesta sessão.";
+    </script>
+  </body>
+</html>
