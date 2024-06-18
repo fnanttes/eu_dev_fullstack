@@ -15,3 +15,13 @@ puts diz.upcase
 
 # Imprime a string modificada 'diz' 5 vezes, cada vez em uma nova linha
 5.times { puts diz }
+
+print diz.upcase
+
+nome = gets.chomp
+
+puts nome
+
+puts "Testando nome #{nome}"
+
+puts nome.downcase
