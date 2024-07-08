@@ -10,7 +10,7 @@
         box-sizing: border-box;
       }
       header {
-        background-color: cyan !important;
+        background-color: cyan;
         text-align: center;
         color: white;
         padding: 20px 0;
@@ -46,13 +46,42 @@
       <input type="text" placeholder="valor do produto" name="valor_produto" />
       <input type="submit" name="acao" value="Cadastrar" />
     </div>
-
     <div class="lista-produtos">
       <div class="lista-produto-single">
         <h3>Red Bull</h3>
         <span>R$ 20,00</span>
       </div>
     </div>
-    <script></script>
+    <div class="lista-produtos">
+      <div class="lista-produto-single">
+        <h3>Red Bull</h3>
+        <span>R$ 20,00</span>
+      </div>
+    </div>
+    <div class="lista-produtos">
+      <div class="lista-produto-single">
+        <h3>Red Bull</h3>
+        <span>R$ 20,00</span>
+      </div>
+    </div>
+    <div class="lista-produtos">
+      <div class="lista-produto-single">
+        <h3>Red Bull</h3>
+        <span>R$ 20,00</span>
+      </div>
+    </div>
+    <div class="lista-produtos">
+      <div class="lista-produto-single">
+        <h3>Red Bull</h3>
+        <span>R$ 20,00</span>
+      </div>
+    </div>
+    <script>
+      // Obtendo referências aos elementos do DOM
+      const inputNomeProduto = document.querySelector('[name="nome_produto"]');
+      const inputValorProduto = document.querySelector('[name="valor_produto"]');
+      const botaoCadastrar = document.querySelector('[name="acao"]');
+      const listaProdutos = document.querySelector('.lista-produtos');
+    </script>
   </body>
 </html>
