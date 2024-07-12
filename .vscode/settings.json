@@ -2,5 +2,7 @@
   "solargraph.useBundler": false,
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
-  "ruby.interpreter.commandPath": "/path/to/ruby"
+  "ruby.interpreter.commandPath": "/path/to/ruby",
+  "totvsLanguageServer.welcomePage": false,
+  "totvsLanguageServer.editor.linter.includes": "C:\\TOTVS\\INCLUDE"
 }
