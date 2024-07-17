@@ -1,0 +1,111 @@
+<html>
+  <body>
+    <div class="container"></div>
+
+    <script>
+      /*
+      // Inicia uma função de tempo de espera de 2000 milissegundos
+      setTimeout(function () {
+        // Cria uma nova instância de XMLHttpRequest para fazer uma requisição HTTP
+        var request = new XMLHttpRequest();
+
+        // Configura a requisição para um método GET, URL e especifica se é assíncrona
+        request.open(
+          "GET",
+          "https://jsonplaceholder.typicode.com/todos/1",
+          true
+        );
+
+        // Define a função que será executada quando a requisição estiver completa
+        request.onload = function () {
+          // Verifica se a requisição foi bem-sucedida (status entre 200 e 399)
+          if (this.status >= 200 && this.status < 400) {
+            // Requisição feita com sucesso! Converte a resposta em JSON
+            var data = JSON.parse(this.response);
+            // Exibe os dados no console do navegador
+            console.log(data);
+          } else {
+            // Trata o erro da requisição
+          }
+        };
+
+        // Define a função que será executada caso ocorra um erro na requisição
+        request.onerror = function () {};
+
+        // Envia a requisição
+        request.send();
+      }, 2000);
+      */
+      /*
+      // Faz uma requisição POST para a API "https://jsonplaceholder.typicode.com/posts"
+      fetch("https://jsonplaceholder.typicode.com/posts", {
+        // Define o método da requisição como POST
+        method: "POST",
+        // Define o corpo da requisição como um objeto JSON
+        body: JSON.stringify({
+          title: "Danki Code",
+          body: "Meu conteúdo",
+          userId: 10,
+        }),
+        // Define os cabeçalhos da requisição
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8",
+        },
+      })
+        // Chama a função de retorno de chamada quando a requisição for bem-sucedida
+        .then((response) => response.json())
+        // Chama a função de retorno de chamada quando a resposta for convertida em JSON
+        .then((json) => console.log(json));
+      */
+
+      // Faz uma requisição GET para a API "https://api.themoviedb.org/3/movie/popular"
+      fetch(
+        "https://api.themoviedb.org/3/movie/popular?api_key=506fadb0256c13349acc05dabebf9604&language=en-US&page=1",
+        {
+          // Define o método da requisição como GET
+          method: "GET",
+        }
+      )
+        // Chama a função de retorno de chamada quando a requisição for bem-sucedida
+        .then((response) => response.json())
+        // Chama a função de retorno de chamada quando a resposta for convertida em JSON
+        .then(function (json) {
+          // Seleciona o elemento HTML com a classe "container"
+          var container = document.querySelector(".container");
+
+          // Percorre a lista de resultados da resposta JSON
+          json.results.map(function (val) {
+            // Adiciona um novo elemento HTML com a classe "tituloFilme" ao elemento "container"
+            container.innerHTML +=
+              `
+                
+                   <div style="cursor:pointer;" class="tituloFilme">` +
+              val.title +
+              `
+                    <div style="display:none;" class="description">` +
+              val.overview +
+              `</div>
+                    <hr>
+                
+                </div>`;
+          });
+
+          // Seleciona todos os elementos HTML com a classe "tituloFilme"
+          var titulos = document.querySelectorAll(".tituloFilme");
+          // Adiciona um evento de clique a cada elemento "tituloFilme"
+          for (var i = 0; i < titulos.length; i++) {
+            titulos[i].addEventListener("click", function (t) {
+              // Alterna a visibilidade da descrição do filme quando o título é clicado
+              if (
+                t.target.querySelector(".description").style.display == "none"
+              ) {
+                t.target.querySelector(".description").style.display = "block";
+              } else {
+                t.target.querySelector(".description").style.display = "none";
+              }
+            });
+          }
+        });
+    </script>
+  </body>
+</html>
