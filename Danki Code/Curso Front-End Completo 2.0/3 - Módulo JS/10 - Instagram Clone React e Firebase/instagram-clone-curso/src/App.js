@@ -1,10 +1,10 @@
 import "./App.css";
-import { db } from "./firebase.js";
+import "./firebase.js";
 import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    console.log(db);
+    
   }, []);
 
   return (

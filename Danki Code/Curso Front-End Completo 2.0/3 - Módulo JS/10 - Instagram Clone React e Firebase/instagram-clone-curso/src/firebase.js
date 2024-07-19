@@ -1,7 +1,10 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/auth";
+import "firebase/storage";
+import "firebase/functions";
 
-const firebaseApp = firebase.initializeApp({
+const firebaseConfig = {
   apiKey: "AIzaSyB4SPcX39EjWeJXO3ctyXa7DwJK31VHwM0",
   authDomain: "instagram-clone-curso-769d6.firebaseapp.com",
   projectId: "instagram-clone-curso-769d6",
@@ -9,9 +12,9 @@ const firebaseApp = firebase.initializeApp({
   messagingSenderId: "518395032335",
   appId: "1:518395032335:web:8770a20e57cfe107e2447a",
   measurementId: "G-50F47E4TCC",
-});
+};
 
-firebase.initializeApp(firebaseApp);
+firebase.initializeApp(firebaseConfig);
 
 // Initialize Firebase
 const db = firebase.firestore();
