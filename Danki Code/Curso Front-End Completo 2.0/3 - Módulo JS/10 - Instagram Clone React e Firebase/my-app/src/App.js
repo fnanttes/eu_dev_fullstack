@@ -3,11 +3,15 @@ import { db } from "./firebase.js";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    console.log(db);
-  }, []);
+  const [user, setUser] = useState();
 
-  return <div className="App"></div>;
+  useEffect(() => {}, []);
+
+  return (
+    <div className="App">
+      <Header setUser={setUser} user={user}></Header>
+    </div>
+  );
 }
 
 export default App;
