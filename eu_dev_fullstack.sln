@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Danki Code", "Danki Code", "{06A90612-5A92-4D47-9106-CA2FAFF14B25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Curso C# Completo", "Curso C# Completo", "{6104B69F-C02A-46BA-B5EC-E49B16F1D2D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First_Step", "Danki Code\Curso C# Completo\First_Step\First_Step.csproj", "{5F4EF6FF-C58E-44CD-8E43-7F432DFFEA98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F4EF6FF-C58E-44CD-8E43-7F432DFFEA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4EF6FF-C58E-44CD-8E43-7F432DFFEA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4EF6FF-C58E-44CD-8E43-7F432DFFEA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4EF6FF-C58E-44CD-8E43-7F432DFFEA98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6104B69F-C02A-46BA-B5EC-E49B16F1D2D4} = {06A90612-5A92-4D47-9106-CA2FAFF14B25}
+		{5F4EF6FF-C58E-44CD-8E43-7F432DFFEA98} = {6104B69F-C02A-46BA-B5EC-E49B16F1D2D4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE95BB60-547D-41EC-9834-959953040BB9}
+	EndGlobalSection
+EndGlobal

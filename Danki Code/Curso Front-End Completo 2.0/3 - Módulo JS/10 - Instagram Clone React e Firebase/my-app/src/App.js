@@ -6,7 +6,7 @@ import Header from "./Header";
 function App() {
   const [user, setUser] = useState();
 
-  useEffect(() => {}, []);
+  useEffect(() => {e}, []);
 
   return (
     <div className="App">
